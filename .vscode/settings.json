@@ -1,0 +1,21 @@
+{
+    "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\cmd.exe",
+    "editor.minimap.enabled": false,
+    "editor.wordWrap": "on",
+    "editor.wordWrap":"wordWrapColumn",
+    "editor.wordWrapColumn":100,
+    "editor.rulers": [
+        70,
+        100
+    ],
+    "workbench.tree.indent": 32,
+    "workbench.tree.renderIndentGuides": "always",
+    "workbench.colorCustomizations": {
+        "tree.indentGuidesStroke": "#e00d0d"
+    },
+    "python.pythonPath": "C:\\Users\\alexm\\.virtualenvs\\tutorials-pUdcyarc\\Scripts\\python.exe",
+    "python.linting.pylintEnabled": true,
+    "python.linting.enabled": true,
+    "restructuredtext.confPath": "${workspaceFolder}\\docs",
+
+}

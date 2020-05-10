@@ -1,0 +1,17 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+pylint = "*"
+
+[packages]
+sphinx = "*"
+faker = "*"
+sphinx-serve = "*"
+sphinx-material = {git = "https://github.com/bashtage/sphinx-material.git"}
+rinohtype = "*"
+
+[requires]
+python_version = "3.7"
