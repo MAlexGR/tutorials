@@ -10,6 +10,7 @@
 
    Python <source/python/py-start>
    R <source/r/r-start>
+   RestruredText <source/restructuredtext/rst-start>
 
 
 At the command line::
