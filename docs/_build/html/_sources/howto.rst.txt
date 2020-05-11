@@ -9,6 +9,6 @@ Q&A
    :maxdepth: 1
    :caption: Q&A:
 
-   Γιατί Τεκμηρίωσης <source/q-and-a/why-documenting>
+   Γιατί Τεκμηρίωση <source/q-and-a/why-documenting>
    Γιατί Έλεγχος Εκδόσεων <source/q-and-a/why-vcs.rst>
    Γιατί Δημοσίευση <source/q-and-a/why-publish.rst>

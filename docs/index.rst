@@ -37,31 +37,14 @@ ordinary paragraph.
 
 Μπορείς να δημιουργήσεις τέτοιους φακέλους με διάφορους τρόπους. Μέσα από cmd πήγαινε με cd στο μέρος που θέλεις να δημιουργήσεις το φάκελο και στη συνέχεια `mkdir <dir name>`, dir name το όνομα που θέλεις. Δες και τον :doc:`οδηγό για Python <source/python/py-start>`
 
-Από εδώ και bla bla kai bla bla και bla bla AKOMHπέρα το φάκελο αυτό θα τον ονομάζουμε "το project". `A cool website`_
 
-+------------------------+------------+----------+----------+
-| Header row, column 1   | Header 2   | Header 3 | Header 4 |
-| (header rows optional) |            |          |          |
-+========================+============+==========+==========+
-| body row 1, column 1   | column 2   | column 3 | column 4 |
-+------------------------+------------+----------+----------+
-| body row 2             | ...        | ...      |          |
-+------------------------+------------+----------+----------+
-
-.. _A cool website: http://sphinx-doc.org
 
 * emphasis
    * write `*text*` or `:emphasis:`text`` to get *text*
 * literal
    * ``text`` or :literal:`text`
 
-A cool bit of code::
 
-   Some cool Code
-
-.. code-block:: rst
-
-   A bit of **rst** which should be *highlighted* properly.
 
 * Πριν καν ξεκινήσεις να προσθέτεις περιεχόμενο στο φάκελο, δημιούργησε ένα virtual environment. Αυτό θα λύσει πολλά πιθανά μελλοντικά προβλήματα. Μερικοί οδηγοί για τη δημιουργία virtual environments είναι οι παρακάτω:
 
