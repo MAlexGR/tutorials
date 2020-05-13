@@ -45,7 +45,7 @@
   
   
   
-    <title>Έλεγχος Εκδόσεων &#8212; Τεκμηρίωση του Generic Tutorials - 0.0.1</title>
+    <title>Βασικά στοιχεία &#8212; Τεκμηρίωση του Generic Tutorials - 0.0.1</title>
     <link rel="stylesheet" href="../../_static/material.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
@@ -56,8 +56,8 @@
     <script src="../../_static/translations.js"></script>
     <link rel="index" title="Ευρετήριο" href="../../genindex.html" />
     <link rel="search" title="Αναζήτηση" href="../../search.html" />
-    <link rel="next" title="Δημοσίευση" href="why-publish.html" />
-    <link rel="prev" title="Τεκμηρίωση" href="why-documenting.html" />
+    <link rel="next" title="Μορφοποίηση γραμμής (inline markup)" href="rst-inline-markup.html" />
+    <link rel="prev" title="Οδηγός για RestructuredText" href="rst-start.html" />
   
    
 
@@ -76,7 +76,7 @@
   <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer">
   <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search">
   <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
-  <a href="#source/q-and-a/why-vcs" tabindex="1" class="md-skip"> Skip to content </a>
+  <a href="#source/restructuredtext/rst-basics" tabindex="1" class="md-skip"> Skip to content </a>
   <header class="md-header" data-md-component="header">
   <nav class="md-header-nav md-grid">
     <div class="md-flex navheader">
@@ -94,7 +94,7 @@
       <div class="md-flex__cell md-flex__cell--stretch">
         <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
           <span class="md-header-nav__topic">Οδηγοί Επιβίωσης</span>
-          <span class="md-header-nav__topic"> Έλεγχος Εκδόσεων </span>
+          <span class="md-header-nav__topic"> Βασικά στοιχεία </span>
         </div>
       </div>
       <div class="md-flex__cell md-flex__cell--shrink">
@@ -151,7 +151,8 @@
     <div class="md-tabs__inner md-grid">
       <ul class="md-tabs__list">
           <li class="md-tabs__item"><a href="../../index.html" class="md-tabs__link">Τεκμηρίωση του Generic Tutorials - 0.0.1</a></li>
-          <li class="md-tabs__item"><a href="../../howto.html" class="md-tabs__link">Q&amp;A</a></li>
+          <li class="md-tabs__item"><a href="../../langs.html" class="md-tabs__link">Προγραμματισμός</a></li>
+          <li class="md-tabs__item"><a href="rst-start.html" class="md-tabs__link">Οδηγός για RestructuredText</a></li>
       </ul>
     </div>
   </nav>
@@ -202,7 +203,7 @@
     <li class="md-nav__item">
     
     
-      <a href="../restructuredtext/rst-start.html" class="md-nav__link">RestruredText</a>
+      <a href="rst-start.html" class="md-nav__link">RestruredText</a>
       
     
     </li></ul>
@@ -237,33 +238,21 @@
     <li class="md-nav__item">
     
     
-      <a href="why-documenting.html" class="md-nav__link">Γιατί Τεκμηρίωση</a>
+      <a href="../q-and-a/why-documenting.html" class="md-nav__link">Γιατί Τεκμηρίωση</a>
       
     
     </li>
     <li class="md-nav__item">
     
     
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    <label class="md-nav__link md-nav__link--active" for="__toc"> Γιατί Έλεγχος Εκδόσεων </label>
-    
-      <a href="#" class="md-nav__link md-nav__link--active">Γιατί Έλεγχος Εκδόσεων</a>
-      
-        
-<nav class="md-nav md-nav--secondary">
-  <ul class="md-nav__list" data-md-scrollfix="">
-    
-<li class="md-nav__item"><a class="md-nav__extra_link" href="../../_sources/source/q-and-a/why-vcs.rst.txt">Προβολή κώδικα</a> </li>
-
-  </ul>
-</nav>
+      <a href="../q-and-a/why-vcs.html" class="md-nav__link">Γιατί Έλεγχος Εκδόσεων</a>
       
     
     </li>
     <li class="md-nav__item">
     
     
-      <a href="why-publish.html" class="md-nav__link">Γιατί Δημοσίευση</a>
+      <a href="../q-and-a/why-publish.html" class="md-nav__link">Γιατί Δημοσίευση</a>
       
     
     </li></ul>
@@ -281,9 +270,18 @@
               <div class="md-sidebar__inner">
                 
 <nav class="md-nav md-nav--secondary">
+    <label class="md-nav__title" for="__toc">Contents</label>
   <ul class="md-nav__list" data-md-scrollfix="">
+        <li class="md-nav__item"><a href="#source-restructuredtext-rst-basics--page-root" class="md-nav__link">Βασικά στοιχεία</a><nav class="md-nav">
+              <ul class="md-nav__list">
+        <li class="md-nav__item"><a href="#id2" class="md-nav__link">Παράγραφος</a>
+        </li>
+        <li class="md-nav__item"><a href="#tables" class="md-nav__link">Tables</a>
+        </li></ul>
+            </nav>
+        </li>
     
-<li class="md-nav__item"><a class="md-nav__extra_link" href="../../_sources/source/q-and-a/why-vcs.rst.txt">Προβολή κώδικα</a> </li>
+<li class="md-nav__item"><a class="md-nav__extra_link" href="../../_sources/source/restructuredtext/rst-basics.rst.txt">Προβολή κώδικα</a> </li>
 
 <li id="searchbox" class="md-nav__item"></li>
 
@@ -297,7 +295,40 @@
           <article class="md-content__inner md-typeset" role="main">
             
   
-<h1 id="source-q-and-a-why-vcs--page-root">Έλεγχος Εκδόσεων<a class="headerlink" href="#source-q-and-a-why-vcs--page-root" title="Μόνιμος σύνδεσμος σε αυτήν την κεφαλίδα">¶</a></h1>
+<h1 id="source-restructuredtext-rst-basics--page-root">Βασικά στοιχεία<a class="headerlink" href="#source-restructuredtext-rst-basics--page-root" title="Μόνιμος σύνδεσμος σε αυτήν την κεφαλίδα">¶</a></h1>
+<p>Η reST δημιουργήθηκε με σκοπό</p>
+
+<h2 id="id2">Παράγραφος<a class="headerlink" href="#id2" title="Μόνιμος σύνδεσμος σε αυτήν την κεφαλίδα">¶</a></h2>
+<p>Η παράγραφος είναι το βασικό μπλοκ κειμένου σε ένα κείμενο γραμμένο σε reST.</p>
+<p>Οι παράγραφοι δεν είναι τίποτε άλλο παρά κομμάτια κειμένου μέσα σε ένα έγγραφο, που ξεχωρίζουν από το υπόλοιπο κείμενο από μία ή περισσότερες κενές γραμμές, πριν και μετά από αυτές.</p>
+<p>Με απλά λόγια, για να καταλάβει η reST ότι αυτό που εμείς γράφουμε είναι παράγραφος, μόλις την ολοκληρώσουμε, πατάμε δύο φορές enter για να ξεκινήσουμε μία νέα. Πιο απλά, κάθε κομμάτι κειμένου θεωρείται παράγραφος όταν πριν και μετά από αυτό υπάρχουν κενές γραμμές. Αυτό ισχύει σε όλες τις markup γλώσσες.</p>
+<p>Αυτός ο απλός τρόπος (κενή γραμμή πριν και μετά) είναι η σήμανση (markup) μίας παραγράφου.</p>
+<p>Το κείμενο που διαβάζετε σε αυτή την ενότητα γράφτηκε σκόπιμα σε πέντε παραγράφους για να δείτε τον τρόπο που δημιουργούνται οι παράγραφοι. Το προτότυπο κείμενο (στον editor) φαίνεται στη συνέχεια.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Η</span> <span class="n">παράγραφος</span> <span class="n">είναι</span> <span class="n">το</span> <span class="n">βασικό</span> <span class="n">μπλοκ</span> <span class="n">κειμένου</span> <span class="n">σε</span> <span class="n">ένα</span> <span class="n">κείμενο</span>
+<span class="n">γραμμένο</span> <span class="n">σε</span> <span class="n">reST</span><span class="o">.</span>
+
+<span class="n">Οι</span> <span class="n">παράγραφοι</span> <span class="n">δεν</span> <span class="n">είναι</span> <span class="n">τίποτε</span> <span class="n">άλλο</span> <span class="n">παρά</span> <span class="n">κομμάτια</span> <span class="n">κειμένου</span> <span class="n">μέσα</span>
+<span class="n">σε</span> <span class="n">ένα</span> <span class="n">έγγραφο</span><span class="p">,</span> <span class="n">που</span> <span class="n">ξεχωρίζουν</span> <span class="n">από</span> <span class="n">το</span> <span class="n">υπόλοιπο</span> <span class="n">κείμενο</span> <span class="n">από</span> <span class="n">μία</span> <span class="n">ή</span>
+<span class="n">περισσότερες</span> <span class="n">κενές</span> <span class="n">γραμμές</span><span class="p">,</span> <span class="n">πριν</span> <span class="n">και</span> <span class="n">μετά</span> <span class="n">από</span> <span class="n">αυτές</span><span class="o">.</span>
+
+<span class="n">Με</span> <span class="n">απλά</span> <span class="n">λόγια</span><span class="p">,</span> <span class="n">για</span> <span class="n">να</span> <span class="n">καταλάβει</span> <span class="n">το</span> <span class="n">reST</span> <span class="n">ότι</span> <span class="n">αυτό</span> <span class="n">που</span> <span class="n">εμείς</span>
+<span class="n">γράφουμε</span><span class="p">,</span> <span class="n">είναι</span> <span class="n">παράγραφος</span><span class="p">,</span> <span class="n">μόλις</span> <span class="n">την</span> <span class="n">ολοκληρώσουμε</span> <span class="n">πατάμε</span> <span class="n">δύο</span>
+<span class="n">φορές</span> <span class="n">enter</span> <span class="n">για</span> <span class="n">να</span> <span class="n">ξεκινήσουμε</span> <span class="n">μία</span> <span class="n">νέα</span><span class="o">.</span>  <span class="n">Πιο</span> <span class="n">απλά</span><span class="p">,</span> <span class="n">κάθε</span> <span class="n">κομμάτι</span>
+<span class="n">κειμένου</span> <span class="n">θεωρείται</span> <span class="n">παράγραφος</span> <span class="n">όταν</span> <span class="n">πριν</span> <span class="n">και</span> <span class="n">μετά</span> <span class="n">από</span> <span class="n">αυτό</span> <span class="n">υπάρχουν</span>
+<span class="n">κενές</span> <span class="n">γραμμές</span><span class="o">.</span> <span class="n">Αυτό</span> <span class="n">ισχύει</span> <span class="n">σε</span> <span class="n">όλες</span> <span class="n">τις</span> <span class="n">markup</span> <span class="n">γλώσσες</span><span class="o">.</span>
+
+<span class="n">Αυτός</span> <span class="n">ο</span> <span class="n">απλός</span> <span class="n">τρόπος</span> <span class="p">(</span><span class="n">κενή</span> <span class="n">γραμμή</span> <span class="n">πριν</span> <span class="n">και</span> <span class="n">μετά</span><span class="p">)</span> <span class="n">είναι</span> <span class="n">η</span> <span class="n">σήμανση</span>
+<span class="p">(</span><span class="n">markup</span><span class="p">)</span> <span class="n">μίας</span> <span class="n">παραγράφου</span><span class="o">.</span>
+
+<span class="n">Το</span> <span class="n">κείμενο</span> <span class="n">που</span> <span class="n">διαβάζετε</span> <span class="n">σε</span> <span class="n">αυτή</span> <span class="n">την</span> <span class="n">ενότητα</span> <span class="n">γράφτηκε</span> <span class="n">σκόπιμα</span> <span class="n">σε</span>
+<span class="n">πέντε</span> <span class="n">παραγράφους</span> <span class="n">για</span> <span class="n">να</span> <span class="n">δείτε</span> <span class="n">τον</span> <span class="n">τρόπο</span> <span class="n">που</span> <span class="n">δημιουργούνται</span> <span class="n">οι</span>
+<span class="n">παράγραφοι</span><span class="o">.</span> <span class="n">Το</span> <span class="n">προτότυπο</span> <span class="n">κείμενο</span> <span class="p">(</span><span class="n">στον</span> <span class="n">editor</span><span class="p">)</span> <span class="n">φαίνεται</span> <span class="n">στη</span> <span class="n">συνέχεια</span><span class="o">.</span>
+</pre></div>
+</div>
+
+
+<h2 id="tables">Tables<a class="headerlink" href="#tables" title="Μόνιμος σύνδεσμος σε αυτήν την κεφαλίδα">¶</a></h2>
+
 
 
 
@@ -310,7 +341,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
           
-            <a href="why-documenting.html" title="Τεκμηρίωση"
+            <a href="rst-start.html" title="Οδηγός για RestructuredText"
                class="md-flex md-footer-nav__link md-footer-nav__link--prev"
                rel="prev">
               <div class="md-flex__cell md-flex__cell--shrink">
@@ -319,17 +350,17 @@
               <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
                 <span class="md-flex__ellipsis">
                   <span
-                      class="md-footer-nav__direction"> Previous </span> Τεκμηρίωση </span>
+                      class="md-footer-nav__direction"> Previous </span> Οδηγός για RestructuredText </span>
               </div>
             </a>
           
           
-            <a href="why-publish.html" title="Δημοσίευση"
+            <a href="rst-inline-markup.html" title="Μορφοποίηση γραμμής (inline markup)"
                class="md-flex md-footer-nav__link md-footer-nav__link--next"
                rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title"><span
                 class="md-flex__ellipsis"> <span
-                class="md-footer-nav__direction"> Next </span> Δημοσίευση </span>
+                class="md-footer-nav__direction"> Next </span> Μορφοποίηση γραμμής (inline markup) </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink"><i
                 class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
