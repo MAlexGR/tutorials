@@ -33,8 +33,14 @@ release = '0.0.1'
 # ones.
 extensions = [
     'sphinx.ext.intersphinx',
-    'rinoh.frontend.sphinx'
+    'rinoh.frontend.sphinx',
+    'recommonmark'
 ]
+
+intersphinx_mapping = {
+    'sphinx': ('https://www.sphinx-doc.org/en/master/', None),
+    'python': ('https://docs.python.org/3', None)
+}
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
@@ -55,6 +61,28 @@ exclude_patterns = [
     '.DS_Store'
 ]
 
+
+#The file extensions of source files. Sphinx considers the files with
+# this suffix as sources. The value can be a dictionary mapping file
+# extensions to file types.
+
+source_suffix = {
+    '.rst': 'restructuredtext',
+    '.txt': 'restructuredtext',
+    '.md': 'markdown',
+}
+
+
+# These folders are copied to the documentation's HTML output
+html_static_path = ['_static']
+
+# These paths are either relative to html_static_path
+# or fully qualified paths (eg. https://...)
+html_css_files = [
+    'css/custom.css',
+]
+
+html_style = 'css/custom.css'
 
 ##---- HTML OUTPUT ---------------------------------------------------
 

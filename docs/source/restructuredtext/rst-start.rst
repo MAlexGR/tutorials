@@ -1,5 +1,5 @@
-Οδηγός για RestructuredText
-#############################
+Εισαγωγή στη RestructuredText
+###############################
 
 Η RestructuredText (συντ. RST ή ReST ή reST) είναι μία markup γλώσσα προγραμματισμού και παράλληλα ένα είδος format αρχείων κειμένου (αρχεία με κατάληξη ".rst"). Συγκαταλλέγεται στις "ελαφριές" γλώσσες σήμανσης (`lightweight markup languages <https://en.wikipedia.org/wiki/Lightweight_markup_language>`_) δηλαδή στις γλώσσες με απλή και διακριτική σύνταξη στις οποίες είναι εύκολη τόσο η γραφή όσο και η ανάγνωση του κειμένου από τον καθένα.
 
@@ -17,3 +17,4 @@
 
    rst-basics
    rst-inline-markup
+   rst-lists

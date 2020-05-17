@@ -45,9 +45,10 @@
   
   
   
-    <title>Μορφοποίηση γραμμής (inline markup) &#8212; Τεκμηρίωση του Generic Tutorials - 0.0.1</title>
-    <link rel="stylesheet" href="../../_static/material.css" type="text/css" />
+    <title>Inline Markup &#8212; Τεκμηρίωση του Generic Tutorials - 0.0.1</title>
+    <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/custom.css" />
     <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
@@ -56,7 +57,7 @@
     <script src="../../_static/translations.js"></script>
     <link rel="index" title="Ευρετήριο" href="../../genindex.html" />
     <link rel="search" title="Αναζήτηση" href="../../search.html" />
-    <link rel="next" title="Χρήσιμες Εφαρμογές" href="../../utils.html" />
+    <link rel="next" title="Lists" href="rst-lists.html" />
     <link rel="prev" title="Βασικά στοιχεία" href="rst-basics.html" />
   
    
@@ -94,7 +95,7 @@
       <div class="md-flex__cell md-flex__cell--stretch">
         <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
           <span class="md-header-nav__topic">Οδηγοί Επιβίωσης</span>
-          <span class="md-header-nav__topic"> Μορφοποίηση γραμμής (inline markup) </span>
+          <span class="md-header-nav__topic"> Inline Markup </span>
         </div>
       </div>
       <div class="md-flex__cell md-flex__cell--shrink">
@@ -152,7 +153,7 @@
       <ul class="md-tabs__list">
           <li class="md-tabs__item"><a href="../../index.html" class="md-tabs__link">Τεκμηρίωση του Generic Tutorials - 0.0.1</a></li>
           <li class="md-tabs__item"><a href="../../langs.html" class="md-tabs__link">Προγραμματισμός</a></li>
-          <li class="md-tabs__item"><a href="rst-start.html" class="md-tabs__link">Οδηγός για RestructuredText</a></li>
+          <li class="md-tabs__item"><a href="rst-start.html" class="md-tabs__link">Εισαγωγή στη RestructuredText</a></li>
       </ul>
     </div>
   </nav>
@@ -189,21 +190,21 @@
     <li class="md-nav__item">
     
     
-      <a href="../python/py-start.html" class="md-nav__link">Python</a>
+      <a href="../python/py-start.html" class="md-nav__link">Η γλώσσα Python</a>
       
     
     </li>
     <li class="md-nav__item">
     
     
-      <a href="../r/r-start.html" class="md-nav__link">R</a>
+      <a href="../r/r-start.html" class="md-nav__link">Εισαγωγή</a>
       
     
     </li>
     <li class="md-nav__item">
     
     
-      <a href="rst-start.html" class="md-nav__link">RestruredText</a>
+      <a href="rst-start.html" class="md-nav__link">Εισαγωγή στη RestructuredText</a>
       
     
     </li></ul>
@@ -258,6 +259,13 @@
     </li></ul>
     
     </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="../gloss/terms.html" class="md-nav__link">Ορολογία</a>
+      
+    
+    </li>
   </ul>
   
 
@@ -270,7 +278,20 @@
               <div class="md-sidebar__inner">
                 
 <nav class="md-nav md-nav--secondary">
+    <label class="md-nav__title" for="__toc">Contents</label>
   <ul class="md-nav__list" data-md-scrollfix="">
+        <li class="md-nav__item"><a href="#source-restructuredtext-rst-inline-markup--page-root" class="md-nav__link">Inline Markup</a><nav class="md-nav">
+              <ul class="md-nav__list">
+        <li class="md-nav__item"><a href="#italic-text" class="md-nav__link">Italic Text</a>
+        </li>
+        <li class="md-nav__item"><a href="#bold-text" class="md-nav__link">Bold Text</a>
+        </li>
+        <li class="md-nav__item"><a href="#verbatim-text" class="md-nav__link">Verbatim Text</a>
+        </li>
+        <li class="md-nav__item"><a href="#inline-markup-restrictions" class="md-nav__link">Inline Markup Restrictions</a>
+        </li></ul>
+            </nav>
+        </li>
     
 <li class="md-nav__item"><a class="md-nav__extra_link" href="../../_sources/source/restructuredtext/rst-inline-markup.rst.txt">Προβολή κώδικα</a> </li>
 
@@ -286,41 +307,207 @@
           <article class="md-content__inner md-typeset" role="main">
             
   
-<h1 id="source-restructuredtext-rst-inline-markup--page-root">Μορφοποίηση γραμμής (inline markup)<a class="headerlink" href="#source-restructuredtext-rst-inline-markup--page-root" title="Μόνιμος σύνδεσμος σε αυτήν την κεφαλίδα">¶</a></h1>
-<p>Μπορούμε να εφαρμόσουμε τις βασικές μορφοποιήσεις κειμένου, στη γραμμή κειμένου που ήδη γράφουμε (inline), με τους εξής τρόπους:</p>
-<dl>
-<dt><strong>Έμφαση</strong> (αγγ. Emphasis or Italics):</dt><dd><p>Χρησιμοποιήστε το σύμβολο <code class="docutils literal notranslate"><span class="pre">*</span></code> (αστεράκι) πριν και μετά το κείμενο που θέλετε να μορφοποιήσετε. Παράδειγμα, γράψτε (στον editor): <code class="docutils literal notranslate"><span class="pre">*κείμενο</span> <span class="pre">με</span> <span class="pre">απλή</span> <span class="pre">έμφαση</span> <span class="pre">(italics)*</span></code>, για να πάρετε: <em>κείμενο με απλή έμφαση (italics)</em>.</p>
-</dd>
-<dt><strong>Έντονη έμφαση</strong> (αγγ. Strong Emphasis or Bold):</dt><dd><p>Χρησιμοποιήστε δύο σύμβολα <code class="docutils literal notranslate"><span class="pre">**</span></code> (δύο αστεράκια) πριν και μετά το κείμενο που θέλετε να μορφοποιήσετε. Παράδειγμα, γράψτε: <code class="docutils literal notranslate"><span class="pre">**κείμενο</span> <span class="pre">με</span> <span class="pre">έντονη</span> <span class="pre">έμφαση</span> <span class="pre">(bold)**</span></code>, για να πάρετε: <strong>κείμενο με έντονη έμφαση (bold)</strong>.</p>
-</dd>
-<dt><strong>Αυτολεξεί</strong> ή «κατά λέξει» κείμενο (αγγ. Verbatim or Literal text)</dt><dd><p>Το verbatim κείμενο είναι αυτό το οποίο δε θέλουμε να έχει κανενός είδους διαμόρφωση, ούτε καν τη γραμματοσειρά που ακολουθεί το υπόλοιπο κείμενο του εγγράφου. Συνήθως verbatim μορφή χρησιμοποιούμε για να δείξουμε κώδικα ή για να τονίσουμε, με ιδιαίτερο τρόπο, ένα κομμάτι κειμένου. Το verbatim κείμενο εμφανίζεται με <a class="reference external" href="https://en.wikipedia.org/wiki/Monospaced_font">monospaced</a> γραμματοσειρά (όλοι οι χαρακτήρες έχουν το ίδιο ακριβώς πλάτος).</p>
-<p>Για να δημιουργήσετε verbatim κείμενο χρησιμοποιήστε τα σύμβολα <code class="docutils literal notranslate"><span class="pre">``</span></code> (δύο backquotes) πριν και μετά το κείμενο που θέλετε να μορφοποιήσετε. Παράδειγμα, γράψτε: <code class="docutils literal notranslate"><span class="pre">``verbatim</span> <span class="pre">ή</span> <span class="pre">literal</span> <span class="pre">κείμενο``</span></code>, για να πάρετε: <code class="docutils literal notranslate"><span class="pre">verbatim</span> <span class="pre">ή</span> <span class="pre">literal</span> <span class="pre">κείμενο</span></code></p>
-</dd>
-</dl>
+<h1 id="source-restructuredtext-rst-inline-markup--page-root">Inline Markup<a class="headerlink" href="#source-restructuredtext-rst-inline-markup--page-root" title="Μόνιμος σύνδεσμος σε αυτήν την κεφαλίδα">¶</a></h1>
+<p>Μπορούμε να εφαρμόσουμε βασικές μορφοποιήσεις κειμένου, στη γραμμή κειμένου που ήδη γράφουμε (inline), χρησιμοποιώντας σαν <em>οριοθέτες</em> (δες <a class="reference internal" href="../gloss/terms.html#term-Delimeter"><span class="xref std std-term">Delimeter</span></a>), τα σύμβολα <code class="docutils literal notranslate"><span class="pre">*</span></code> και <code class="docutils literal notranslate"><span class="pre">`</span></code>. Το κείμενο που θέλουμε να διαμορφώσουμε πρέπει να βρίσκεται μεταξύ αυτών των οριοθετών γι αυτό και λέγεται <em>περιεχόμενο</em> (content). Μπορούμε να κάνουμε τις παρακάτω μορφοποιήσεις.</p>
+
+<h2 id="italic-text">Italic Text<a class="headerlink" href="#italic-text" title="Μόνιμος σύνδεσμος σε αυτήν την κεφαλίδα">¶</a></h2>
+<p>Λέγεται αλλιώς και <em>Emphasis</em> (ελλ. “Έμφαση”). Για να μορφοποιήσετε ένα μέρος κειμένου σαν <em>italics</em> χρησιμοποιήστε το σύμβολο <code class="docutils literal notranslate"><span class="pre">*</span></code> (αστεράκι) πριν και μετά το κείμενο που θέλετε να μορφοποιήσετε.</p>
+<table id="id5">
+<caption><span class="caption-text">italic text</span><a class="headerlink" href="#id5" title="Απευθείας σύνδεσμος σε αυτόν τον πίνακα">¶</a></caption>
+<colgroup>
+<col style="width: 35%"/>
+<col style="width: 35%"/>
+<col style="width: 30%"/>
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Στον editor:</p></th>
+<th class="head"><p>Αποτέλεσμα</p></th>
+<th class="head"><p>Παρατηρήσεις</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">κείμενο</span> <span class="pre">*με</span> <span class="pre">απλή*</span> <span class="pre">έμφαση</span> <span class="pre">(italics)</span></code></p></td>
+<td><p>κείμενο <em>με απλή</em> έμφαση (italics)</p></td>
+<td><p>Οριοθετήστε το κείμενο που θέλετε να διαμορφώσετε, με ένα * (asterisk), πριν και μετά</p></td>
+</tr>
+</tbody>
+</table>
+
+
+<h2 id="bold-text">Bold Text<a class="headerlink" href="#bold-text" title="Μόνιμος σύνδεσμος σε αυτήν την κεφαλίδα">¶</a></h2>
+<p>Λέγεται αλλιώς και <em>Strong Emphasis</em> (ελλ. “Έντονη Έμφαση”). Για να μορφοποιήσετ ένα μέρος του κειμένου σαν <strong>bold</strong> χρησιμοποιήστε δύο σύμβολα <code class="docutils literal notranslate"><span class="pre">**</span></code> (δύο αστεράκια) πριν και μετά το κείμενο που θέλετε να μορφοποιήσετε.</p>
+<table id="id6">
+<caption><span class="caption-text">bold text</span><a class="headerlink" href="#id6" title="Απευθείας σύνδεσμος σε αυτόν τον πίνακα">¶</a></caption>
+<colgroup>
+<col style="width: 35%"/>
+<col style="width: 35%"/>
+<col style="width: 30%"/>
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Στον editor:</p></th>
+<th class="head"><p>Αποτέλεσμα</p></th>
+<th class="head"><p>Παρατηρήσεις</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">κείμενο</span> <span class="pre">**με</span> <span class="pre">έντονη**</span> <span class="pre">έμφαση</span> <span class="pre">(bold)</span></code></p></td>
+<td><p>κείμενο <strong>με έντονη</strong> έμφαση (bold)</p></td>
+<td><p>Οριοθετήστε το κείμενο που θέλετε να διαμορφώσετε, με δύο ** (asterisks), πριν και μετά.</p></td>
+</tr>
+</tbody>
+</table>
+
+
+<h2 id="verbatim-text">Verbatim Text<a class="headerlink" href="#verbatim-text" title="Μόνιμος σύνδεσμος σε αυτήν την κεφαλίδα">¶</a></h2>
+<p>Λέγεται αλλιώς και <em>Literal text</em> (ελλ. “Αυτολεξεί” ή “κατά λέξει”). Το verbatim κείμενο είναι αυτό το οποίο δε θέλουμε να έχει καμία διαμόρφωση, ούτε καν τη γραμματοσειρά που ακολουθεί το υπόλοιπο κείμενο του εγγράφου (να εκτυπωθεί δηλαδή ως έχει). Συνήθως verbatim μορφή χρησιμοποιούμε για να δείξουμε κώδικα ή για να τονίσουμε, με ιδιαίτερο τρόπο, ένα κομμάτι κειμένου. Το verbatim κείμενο εμφανίζεται με <a class="reference external" href="https://en.wikipedia.org/wiki/Monospaced_font">monospaced</a> γραμματοσειρά (όλοι οι χαρακτήρες έχουν το ίδιο ακριβώς πλάτος).</p>
+<p>Για να δημιουργήσετε verbatim κείμενο χρησιμοποιήστε τα σύμβολα <code class="docutils literal notranslate"><span class="pre">``</span></code> (δύο backquotes) πριν και μετά το κείμενο που θέλετε να μορφοποιήσετε.</p>
+<table id="id7">
+<caption><span class="caption-text">verbatim text</span><a class="headerlink" href="#id7" title="Απευθείας σύνδεσμος σε αυτόν τον πίνακα">¶</a></caption>
+<colgroup>
+<col style="width: 35%"/>
+<col style="width: 35%"/>
+<col style="width: 30%"/>
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Γράψτε στον editor:</p></th>
+<th class="head"><p>Αποτέλεσμα:</p></th>
+<th class="head"><p>Παρατηρήσεις:</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">``κείμενο</span> <span class="pre">verbatim</span> <span class="pre">(δηλαδή</span> <span class="pre">αυτολεξεί)``</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">κείμενο</span> <span class="pre">verbatim</span> <span class="pre">(δηλαδή</span> <span class="pre">αυτολεξεί)</span></code></p></td>
+<td><p>Οριοθετήστε το κείμενο που θέλετε να διαμορφώσετε, με δύο <code class="docutils literal notranslate"><span class="pre">``</span></code> (backquotes) πριν και μετά.</p></td>
+</tr>
+</tbody>
+</table>
 <div class="admonition note">
 <p class="admonition-title">Σημείωση</p>
-<p>Το σύμβολο <code class="docutils literal notranslate"><span class="pre">`</span></code> (backquote), στα περισσότερα πληκτρολόγια, βρίσκεται μαζί με το πλήκτρο “esc” (πλήκτρο escape, πάνω αριστερά στο πληκτρολόγιό σας). Μάθετε πως μπορείτε να το ενεργοποιέιτε στο δικό σας πληκτρολόγιο.</p>
-<p>Μη συγχέετε το σύμβολο <em>backquote</em> <code class="docutils literal notranslate"><span class="pre">`</span></code> με το σύμβολο <em>quote</em> <code class="docutils literal notranslate"><span class="pre">'</span></code> που συνήθως βρίσκεται στο πλήκτρο αμέσως αριστερά από το πλήκτρο «enter». Αν κοιτάξετε προσεκτικά θα διαπιστώσετε ότι το μεν backquote σύμβολο είναι ένας διαγώνιος τόνος με κατέυθυνση από πάνω αριστερά προς κάτω δεξιά ενώ το quote αντίστοιχα είναι ένας τόνος με κατεύθυνση από πάνω δεξιά προς κάτω αριστερά ή κατακόρυφος.</p>
+<p>Μη συγχέετε το σύμβολο <em>backquote</em> <code class="docutils literal notranslate"><span class="pre">`</span></code> με το σύμβολο <em>quote</em> <code class="docutils literal notranslate"><span class="pre">'</span></code>. Το <code class="docutils literal notranslate"><span class="pre">`</span></code> στα περισσότερα πληκτρολόγια βρίσκεται μαζί με το πλήκτρο “esc”, ενώ το <code class="docutils literal notranslate"><span class="pre">'</span></code> συνήθως στο πλήκτρο αμέσως αριστερά από το πλήκτρο “enter”. Αν κοιτάξετε προσεκτικά θα διαπιστώσετε ότι το μεν backquote είναι ένας διαγώνιος τόνος με κατέυθυνση από πάνω αριστερά προς κάτω δεξιά ενώ το quote είναι ένας τόνος με κατεύθυνση από πάνω δεξιά προς κάτω αριστερά ή κατακόρυφος.</p>
 </div>
-<div class="admonition tip">
-<p class="admonition-title">Πρακτική συμβουλή</p>
-<p>Η δημιουργία verbatim κειμένου με χρήση των backquotes, είναι πολύ κοινή, σε σχεδόν όλες τις markup γλώσσες. Γενικά μπορούμε να δημιουργήσουμε verbatim κείμενο χρησιμοποιώντας είτε ένα είτε δύο backquotes, πριν και μετά το κείμενο που μας ενδιαφέρει. Όμως στη reST τα απλά backquotes σημαίνουν σήμανση κειμένου που πρόκειται να διερμηνευτεί. Ο τρόπος επεξεργασίας και διερμηνείας του κειμένου (μέσα σε απλά backquotes) εξαρτάται από το σύστημα που θα κληθεί να επεξεργαστεί όλο το έγγραφο (στην περίπτωση της reST, πιθανώς μέσω Sphinx). Για να μην έχετε περίεργα αποτελέσματα, να χρησιμοποιείτε πάντα <strong>διπλά backquotes</strong> για κείμενο που θέλετε να διαμορφώσετε σαν verbatim.</p>
-</div>
+
+
+<h2 id="inline-markup-restrictions">Inline Markup Restrictions<a class="headerlink" href="#inline-markup-restrictions" title="Μόνιμος σύνδεσμος σε αυτήν την κεφαλίδα">¶</a></h2>
 <p>Αυτοί είναι οι βασικοί και απλούστεροι τρόποι inline markup αλλά δεν είναι οι μόνοι. Θα δούμε στη συνέχεια και άλλες πιο σύνθετες διαμορφώσεις. Πριν προχωρήσουμε όμως να σημειώσουμε κάποιους κανόνες και περιορισμούς που πρέπει να τηρούνται:</p>
-<ul class="simple">
-<li><dl class="simple">
-<dt>Αν θέλετε να χρησιμοποιήσετε κάποιον από τους χαρακτήρες <code class="docutils literal notranslate"><span class="pre">`</span></code> ή <code class="docutils literal notranslate"><span class="pre">*</span></code> όπως είναι, θα πρέπει πρώτα να τον «αποδεσμεύσετε» (escape). Για την αποδέσμευσή του μπορείτε να χρησιμοποιήσετε σαν χαρακτήρα διαφυγής (escape character) το σύμβολο «backslash» <code class="docutils literal notranslate"><span class="pre">\</span></code>.</dt><dd><p>Παραδείγματα:</p>
 <ul>
-<li><p><a href="#id1"><span class="problematic" id="id2">:underline:`This text is underlined`</span></a> <code class="docutils literal notranslate"><span class="pre">αστερίσκοι</span> <span class="pre">\*μέσα\*</span> <span class="pre">στο</span> <span class="pre">κείμενο</span></code>, <em>αποτέλεσμα</em>: αστερίσκοι *μέσα* στο κείμενο</p></li>
-<li><p><em>editor</em>: <code class="docutils literal notranslate"><span class="pre">αυτός</span> <span class="pre">είναι</span> <span class="pre">ένα</span> <span class="pre">backquote</span> <span class="pre">\`</span></code>, <em>αποτέλεσμα</em>: «αυτός είναι ένα backquote `»</p></li>
+<li><p>Πριν και μετά τους οριοθέτες <code class="docutils literal notranslate"><span class="pre">`</span></code> και <code class="docutils literal notranslate"><span class="pre">*</span></code> θα πρέπει να προηγείται και να ακολουθεί ένα κενό αντίστοιχα. Με απλά λόγια, το περιεχόμενο θα πρέπει να ξεχωρίζει από το υπόλοιπο κείμενο.</p>
+<table id="id8">
+<caption><span class="caption-text">κενό έξω από τους οριοθέτες (ισχύουν τα ίδια για <code class="docutils literal notranslate"><span class="pre">*</span></code>, <code class="docutils literal notranslate"><span class="pre">**</span></code> και <code class="docutils literal notranslate"><span class="pre">``</span></code>)</span><a class="headerlink" href="#id8" title="Απευθείας σύνδεσμος σε αυτόν τον πίνακα">¶</a></caption>
+<colgroup>
+<col style="width: 30%"/>
+<col style="width: 30%"/>
+<col style="width: 10%"/>
+<col style="width: 30%"/>
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Αν γράψετε…</p></th>
+<th class="head"><p>Θα πάρετε…</p></th>
+<th class="head"><p>που είναι…</p></th>
+<th class="head"><p>γιατί…</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">δεν</span> <span class="pre">προηγείται**κενό**</span> <span class="pre">πριν</span></code></p></td>
+<td><p>δεν προηγείται**κενό** πριν</p></td>
+<td><p>λάθος</p></td>
+<td><p>δεν προηγείται κενό πριν τους οριοθέτες έναρξης</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">δεν</span> <span class="pre">ακολουθεί</span> <span class="pre">**κενό**μετά</span></code></p></td>
+<td><p>δεν ακολουθεί <a href="#id1"><span class="problematic" id="id2">**</span></a>κενό**μετά</p></td>
+<td><p>λάθος</p></td>
+<td><p>δεν ακολουθεί κενό μετά τους οριοθέτες τέλους</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">υπάρχει</span> <span class="pre">**κενό**</span> <span class="pre">πριν</span> <span class="pre">και</span> <span class="pre">μετά</span></code></p></td>
+<td><p>υπάρχει <strong>κενό</strong> πριν και μετά</p></td>
+<td><p>σωστό</p></td>
+<td><p>υπάρχουν κενά πριν τους οριοθέτες έναρξης και μετά τους οριοθέτες τέλους</p></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li><p>Αντίθετα με τα παραπάνω, πριν και μετά το περιεχόμενο, <strong>δεν πρέπει</strong> να υπαρχουν κενά. Mε απλά λόγια, το περιεχόμενο δεν πρέπει να ξεχωρίζει από τους οριοθέτες του.</p>
+<table id="id9">
+<caption><span class="caption-text">Κενό μέσα από τους οριοθέτες (ισχύουν τα ίδια για <code class="docutils literal notranslate"><span class="pre">*</span></code>, <code class="docutils literal notranslate"><span class="pre">**</span></code> και <code class="docutils literal notranslate"><span class="pre">``</span></code>)</span><a class="headerlink" href="#id9" title="Απευθείας σύνδεσμος σε αυτόν τον πίνακα">¶</a></caption>
+<colgroup>
+<col style="width: 30%"/>
+<col style="width: 30%"/>
+<col style="width: 10%"/>
+<col style="width: 30%"/>
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Αν γράψετε…</p></th>
+<th class="head"><p>Θα πάρετε…</p></th>
+<th class="head"><p>που είναι…</p></th>
+<th class="head"><p>γιατί…</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">υπάρχει</span> <span class="pre">**</span> <span class="pre">κενό**</span> <span class="pre">αμέσως</span> <span class="pre">μετά</span></code></p></td>
+<td><p>υπάρχει ** κενό** αμέσως μετά</p></td>
+<td><p>λάθος</p></td>
+<td><p>υπάρχει κενό αμέσως μετά τους οριοθέτες έναρξης</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">υπάρχει</span> <span class="pre">**κενό</span> <span class="pre">**</span> <span class="pre">ακριβώς</span> <span class="pre">πριν</span></code></p></td>
+<td><p>υπάρχει <a href="#id3"><span class="problematic" id="id4">**</span></a>κενό ** ακριβώς πριν</p></td>
+<td><p>λάθος</p></td>
+<td><p>υπάρχει κενό ακριβώς πριν τους οριοθέτες τέλους</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">δεν</span> <span class="pre">υπάρχουν</span> <span class="pre">**κενά**</span> <span class="pre">μετά</span> <span class="pre">και</span> <span class="pre">πριν</span></code></p></td>
+<td><p>δεν υπάρχουν <strong>κενά</strong> μετά και πριν</p></td>
+<td><p>σωστό</p></td>
+<td><p>δεν υπάρχουν κενά μετά τους οριοθέτες έναρξης και πριν τους οριοθέτες τέλους</p></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li><p>Αν θέλετε να χρησιμοποιήσετε κάποιον από τους χαρακτήρες <code class="docutils literal notranslate"><span class="pre">`</span></code> ή <code class="docutils literal notranslate"><span class="pre">*</span></code> μέσα στο κείμενο και δεν θέλετε να υπάρχει σύγχυση ως προς την χρήση, θα πρέπει πρώτα να «αποδεσμεύσετε» (escape) τον χαρακτήρα που σας ενδιαφέρει. Για την αποδέσμευσή του μπορείτε να χρησιμοποιήσετε σαν χαρακτήρα διαφυγής (escape character) το σύμβολο <code class="docutils literal notranslate"><span class="pre">\</span></code> (backslash, για περισσότερες πληροφορίες δες «<a class="reference internal" href="../gloss/terms.html#term-Escape-Character"><span class="xref std std-term">Escape Character</span></a>»). Για παράδειγμα, αν (για οποιονδήποτε λόγο) θέλετε *να εμφανίζονται οι χαρακτήρες* και `μέσα στο κείμενο` όπως εδώ, συντάξτε το κάπως έτσι: (η φράση επαναλαμβάνεται) <code class="docutils literal notranslate"><span class="pre">αν</span> <span class="pre">(για</span> <span class="pre">οποιονδήποτε</span> <span class="pre">λόγο)</span> <span class="pre">θέλετε</span> <span class="pre">\*να</span> <span class="pre">εμφανίζονται</span> <span class="pre">οι</span> <span class="pre">χαρακτήρες\*</span> <span class="pre">και</span> <span class="pre">\`μέσα</span> <span class="pre">στο</span> <span class="pre">κείμενο\`</span> <span class="pre">όπως</span> <span class="pre">εδώ,</span> <span class="pre">συντάξτε</span> <span class="pre">το</span> <span class="pre">κάπως</span> <span class="pre">έτσι:</span></code></p></li>
 </ul>
-</dd>
-</dl>
+<div class="admonition hint">
+<p class="admonition-title">Συμβουλή</p>
+<p>Ο χαρακτήρας <code class="docutils literal notranslate"><span class="pre">\</span></code> (backslash) χρησιμοποιείται και σε άλλες markup γλώσσες αλλά και γλώσσες προγραμματισμού, σαν χαρακτήρας διαφυγής. Απευθυνθείτε στις αντίστοιχες τεκμηριώσεις για περισσότερες λεπτομέρειες. Επίσης, με backslash μπορούμε να αποδεσμεύσουμε και οποιονδήποτε άλλο δεσμευμένο χαρακτήρα.</p>
+</div>
+<ul>
+<li><p>Δεν μπορούμε να κάνουμε σύνθετες (nested) διαμορφώσεις. Για παράδειγμα οι παρακάτω συνδυασμοί δε λειτουργούν:</p>
+<table id="id10">
+<caption><span class="caption-text">Η reST δεν υποστηρίζει σύνθετες διαμορφώσεις.</span><a class="headerlink" href="#id10" title="Απευθείας σύνδεσμος σε αυτόν τον πίνακα">¶</a></caption>
+<colgroup>
+<col style="width: 30%"/>
+<col style="width: 30%"/>
+<col style="width: 10%"/>
+<col style="width: 30%"/>
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Αν γράψετε…</p></th>
+<th class="head"><p>Θα πάρετε…</p></th>
+<th class="head"><p>που είναι…</p></th>
+<th class="head"><p>γιατί…</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">**o</span> <span class="pre">συνδυασμός</span> <span class="pre">bold</span> <span class="pre">με</span> <span class="pre">*italics***</span></code></p></td>
+<td><p><strong>o συνδυασμός bold με *italics*</strong></p></td>
+<td><p>-</p></td>
+<td><p>δεν υποστηρίζεται</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">*o</span> <span class="pre">συνδυασμός</span> <span class="pre">italics</span> <span class="pre">με</span> <span class="pre">**bold***</span></code></p></td>
+<td><p><em>o συνδυασμός italics με **bold**</em></p></td>
+<td><p>-</p></td>
+<td><p>δεν υποστηρίζεται</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">``o</span> <span class="pre">συνδυασμός</span> <span class="pre">verbatim</span> <span class="pre">με</span> <span class="pre">οποιονδήποτε</span> <span class="pre">*italics*</span> <span class="pre">ή/και</span> <span class="pre">**bold**``</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">o</span> <span class="pre">συνδυασμός</span> <span class="pre">verbatim</span> <span class="pre">με</span> <span class="pre">οποιονδήποτε</span> <span class="pre">*italics*</span> <span class="pre">ή/και</span> <span class="pre">**bold**</span></code></p></td>
+<td><p>-</p></td>
+<td><p>δεν υποστηρίζεται</p></td>
+</tr>
+</tbody>
+</table>
 </li>
 </ul>
-<p><em>content</em></p>
-<p><code class="docutils literal notranslate"><span class="pre">text</span> <span class="pre">\</span> <span class="pre">and</span> <span class="pre">\</span> <span class="pre">backslashes</span></code></p>
-<p><code class="docutils literal notranslate"><span class="pre">text</span> <span class="pre">and</span> <span class="pre">backslashes</span></code></p>
+<div class="admonition- admonition">
+<p class="admonition-title">Πληροφοριακά</p>
+<p>Σε αντίθεση με τη reST άλλες markup γλώσσες υποστηρίζουν μερικά τη δυνατότητα nested inline διαμόρφωσης.</p>
+</div>
+
 
 
 
@@ -347,12 +534,12 @@
             </a>
           
           
-            <a href="../../utils.html" title="Χρήσιμες Εφαρμογές"
+            <a href="rst-lists.html" title="Lists"
                class="md-flex md-footer-nav__link md-footer-nav__link--next"
                rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title"><span
                 class="md-flex__ellipsis"> <span
-                class="md-footer-nav__direction"> Next </span> Χρήσιμες Εφαρμογές </span>
+                class="md-footer-nav__direction"> Next </span> Lists </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink"><i
                 class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
