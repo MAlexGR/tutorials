@@ -8,9 +8,9 @@
    :maxdepth: 1
    :caption: Περιεχόμενα:
 
-   Python <source/python/py-start>
-   R <source/r/r-start>
-   RestruredText <source/restructuredtext/rst-start>
+   source/python/py-start
+   source/r/r-start
+   source/restructuredtext/rst-start
 
 
 At the command line::
