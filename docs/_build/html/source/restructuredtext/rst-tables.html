@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+
+<html lang="el">
+  <head>
+    <meta charset="utf-8" />
+    <title>Tables &#8212; Τεκμηρίωση του Generic Tutorials - 0.0.1</title>
+    <link rel="stylesheet" href="../../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/custom.css" />
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/language_data.js"></script>
+    <script src="../../_static/translations.js"></script>
+    <link rel="index" title="Ευρετήριο" href="../../genindex.html" />
+    <link rel="search" title="Αναζήτηση" href="../../search.html" />
+    <link rel="next" title="Χρήσιμες Εφαρμογές" href="../../utils.html" />
+    <link rel="prev" title="Lists" href="rst-lists.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="../../_static/js/jquery-1.11.0.min.js "></script>
+<script type="text/javascript" src="../../_static/js/jquery-fix.js "></script>
+<script type="text/javascript" src="../../_static/bootstrap-3.3.7/js/bootstrap.min.js "></script>
+<script type="text/javascript" src="../../_static/bootstrap-sphinx.js "></script>
+
+  </head><body>
+
+  <div id="navbar" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../../index.html">
+          Οδηγοί Επιβίωσης</a>
+        <span class="navbar-text navbar-version pull-left"><b></b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="../../index.html">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../../langs.html">Προγραμματισμός</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../utils.html">Χρήσιμες Εφαρμογές</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../guides.html">Οδηγοί</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ides.html">IDE</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../howto.html">Q&amp;A</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../gloss/terms.html">Ορολογία</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../temp.html">Admonitions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../temp.html#footnotes">Footnotes</a></li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul>
+<li><a class="reference internal" href="#">Tables</a><ul>
+<li><a class="reference internal" href="#simple-tables">Simple Tables</a></li>
+<li><a class="reference internal" href="#grid-tables">Grid Tables</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+  <li>
+    <a href="rst-lists.html" title="Previous Chapter: Lists"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; Lists</span>
+    </a>
+  </li>
+  <li>
+    <a href="../../utils.html" title="Next Chapter: Χρήσιμες Εφαρμογές"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm hidden-tablet">Χρήσιμες Εφαρμογές &raquo;</span>
+    </a>
+  </li>
+              
+            
+            
+            
+            
+              <li class="hidden-sm">
+<div id="sourcelink">
+  <a href="../../_sources/source/restructuredtext/rst-tables.rst.txt"
+     rel="nofollow">Source</a>
+</div></li>
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="../../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+      <div class="col-md-3">
+        <div id="sidebar" class="bs-sidenav" role="complementary"><li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="../../index.html">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../../langs.html">Προγραμματισμός</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../utils.html">Χρήσιμες Εφαρμογές</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../guides.html">Οδηγοί</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ides.html">IDE</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../howto.html">Q&amp;A</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../gloss/terms.html">Ορολογία</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../temp.html">Admonitions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../temp.html#footnotes">Footnotes</a></li>
+</ul>
+</ul>
+</li><ul>
+<li><a class="reference internal" href="#">Tables</a><ul>
+<li><a class="reference internal" href="#simple-tables">Simple Tables</a></li>
+<li><a class="reference internal" href="#grid-tables">Grid Tables</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    <div class="body col-md-9 content" role="main">
+      
+  <div class="section" id="tables">
+<h1>Tables<a class="headerlink" href="#tables" title="Μόνιμος σύνδεσμος σε αυτήν την κεφαλίδα">¶</a></h1>
+<p>Οι πίνακες είναι ένα άλλο στοιχείο τυπογραφίας που υποστηρίζεται εγγενώς από τη reST. Οι πίνακες είναι ένας εύκολος και οπτικά μοναδικός, τρόπος να παρουσιάσουμε κάποια στοιχεία σε ένα έγγραφο. <code class="docutils literal notranslate"><span class="pre">..</span></code></p>
+<p>Ένας πίνακας αναπτύσσεται σε γραμμές (rows) και στήλες (columns). Τα σημεία τομής των στηλών και γραμμών λέγονται κελιά (cells). Συνήθως (αν και δεν είναι υποχρεωτικό), στα κελιά της πρώτης γραμμής ενός πίνακα γράφουμε ειδικούς τίτλους (headings), οι οποίοι περιγράφουν τι περιέχεται στις αντίστοιχες στήλες. Πιο σπάνια, τίτλοι μπορεί να περιέχονται και στην πρώτη στήλη ενός πίνακα, εξαρτάται από τη μορφή που θέλουμε να δώσουμε. <code class="docutils literal notranslate"><span class="pre">text</span></code></p>
+<p>Συνήθως και αν απαιτηθεί, τα κελιά ενός πίνακα προσδιορίζονται με ένα ζευγάρι αριθμών. Ο πρώτος αναφέρεται στη γραμμή και ο δεύτερος στη στήλη που ανήκει το κελί. Για παράδειγμα, όταν μιλάμε για το κελί (3,2) αναφερόμαστε στο κελί που σχηματίζεται από την τομή της τρίτης γραμμής και δεύτερης στήλης του πίνακα.</p>
+<p>Στη reST μπορούμε να δημιουργήσουμε πίνακες με δύο διαφορετικούς τρόπους, ο καθένας από τους οποίους προσφέρει επιπλέον επιλογές. Πιο συγκεκριμένα, η reST αναγνωρίζει:</p>
+<dl>
+<dt>Markup Tables</dt><dd><p>Είναι πίνακες που τους κατασκευάζουμε εμείς εξολοκλήρου, με σημάνσεις. Μπορούμε να κατασκευάσουμε δύο είδη τέτοιων πινάκων:</p>
+<ul class="simple">
+<li><p><strong>Simple tables</strong> ή <em>απλούς πίνακες</em> και</p></li>
+<li><p><strong>Grid Tables</strong> δηλαδή <em>πίνακες πλέγματος</em></p></li>
+</ul>
+</dd>
+<dt>Special Tables</dt><dd><p>Είναι ειδικοί πίνακες που τους εισάγουμε με οδηγίες (directives). Πιο συγκεκριμένα, είναι διαθέσιμα τα παρακάτω directives:</p>
+<ul>
+<li><dl class="rst directive">
+<dt id="directive-tabularcolumns">
+<code class="sig-name descname">.. tabularcolumns::</code><a class="headerlink" href="#directive-tabularcolumns" title="Μόνιμος σύνδεσμος σε αυτόν τον ορισμό">¶</a></dt>
+<dd></dd></dl>
+
+</li>
+<li><dl class="rst directive">
+<dt id="directive-table">
+<code class="sig-name descname">.. table::</code><a class="headerlink" href="#directive-table" title="Μόνιμος σύνδεσμος σε αυτόν τον ορισμό">¶</a></dt>
+<dd></dd></dl>
+
+</li>
+<li><dl class="rst directive">
+<dt id="directive-csv-table">
+<code class="sig-name descname">.. csv-table::</code><a class="headerlink" href="#directive-csv-table" title="Μόνιμος σύνδεσμος σε αυτόν τον ορισμό">¶</a></dt>
+<dd></dd></dl>
+
+</li>
+<li><dl class="rst directive">
+<dt id="directive-list-table">
+<code class="sig-name descname">.. list-table::</code><a class="headerlink" href="#directive-list-table" title="Μόνιμος σύνδεσμος σε αυτόν τον ορισμό">¶</a></dt>
+<dd></dd></dl>
+
+</li>
+</ul>
+</dd>
+</dl>
+<p>Κάθε μία από τις παραπάνω μεθόδους προσφέρει πλεονεκτήματα αλλά έχει και μειονεκτήματα. Το τι θα επιλέξετε εξαρτάται από τις ανάγκες σας.</p>
+<p>Όπως και με τα υπόλοιπα στοιχεία κειμένου (body elements), οι πίνακες θα πρέπει να διαχωρίζονται από το τρέχον κείμενο με κενές γραμμές (πριν και μετά). Η αριστερή άκρη ενός πίνακα (αρχική εσοχή) θα πρέπει να είναι ευθυγραμμισμένη με την αριστερή άκρη του προηγούμενου μπλοκ κειμένου. Άρα αν μιλάμε για έναν πίνακα που θέλουμε να εισάγουμε στο βασικό τρέχον κείμενο (κυρίως σώμα κειμένου), δεν πρέπει να έχει αριστερά εσοχή. Αν δημιουργήσετε εσοχή έστω και ενός κενού, θα μεταφραστεί (και θα εμφανιστεί) σαν block quote.</p>
+<p>Μπορείτε να φανταστείτε ένα κελί του πίνακα σαν ένα μίνι έγγραφο. Τα άνω και κάτω όρια του κελιού λειτουργούν σαν κενές διαχωριστικές γραμμές, όταν θα γίνει η επεξεργασία του πίνακα, τα περιεχόμενα των κελιών θα έχουν κενό χώρο πάνω και κάτω. Μέσα στα κελιά μπορούμε να προσθέσουμε κανένα ή διάφορα στοιχεία κειμένου, αλλά όχι αυθαίρετα. Το τι υλικό μπορούμε να προσθέσουμε και πως θα το διαχειριστούμε, εξαρτάται από την μέθοδο εισαγωγής πίνακα που θα επιλέξουμε. Μέσα στα κελιά, αν πριν ή/και μετά το περιεχόμενο υπάρχουν κενά, αυτά θα αγνοηθούν στην επεξεργασία.</p>
+<p>Αυτές είναι γενικά οι λεπτομέρειες που θα πρέπει να έχετε υπόψη σας για τους πίνακες. Ας δούμε τα διάφορα είδη πινάκων αναλυτικά.</p>
+<div class="section" id="simple-tables">
+<h2>Simple Tables<a class="headerlink" href="#simple-tables" title="Μόνιμος σύνδεσμος σε αυτήν την κεφαλίδα">¶</a></h2>
+<p>Οι απλοί πίνακες είναι οι σχετικά πιο εύκολοι στην κατασκευή αλλά έχουν περιορισμούς. Προτιμώνται για απλές πινακοειδείς αναπαραστάσεις δεδομένων. Ας δούμε άμεσα ένα απλό παράδειγμα:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">==========</span>  <span class="o">==========</span>  <span class="o">==========</span>
+   <span class="n">A</span>           <span class="n">B</span>           <span class="n">Γ</span>
+<span class="o">==========</span>  <span class="o">==========</span>  <span class="o">==========</span>
+<span class="n">κελί</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span>  <span class="n">κελί</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span>  <span class="n">κελί</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span>
+<span class="n">κελί</span> <span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span>  <span class="n">κελί</span> <span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span>  <span class="n">κελί</span> <span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span>
+<span class="n">κελί</span> <span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span>  <span class="n">κελί</span> <span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span>  <span class="n">κελί</span> <span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span>
+<span class="o">==========</span>  <span class="o">==========</span>  <span class="o">==========</span>
+</pre></div>
+</div>
+<hr class="docutils" />
+<p><em>Αποτέλεσμα</em></p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>A</p></th>
+<th class="head"><p>B</p></th>
+<th class="head"><p>Γ</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>κελί (1,1)</p></td>
+<td><p>κελί (1,2)</p></td>
+<td><p>κελί (1,3)</p></td>
+</tr>
+<tr class="row-odd"><td><p>κελί (2,1)</p></td>
+<td><p>κελί (2,2)</p></td>
+<td><p>κελί (2,3)</p></td>
+</tr>
+<tr class="row-even"><td><p>κελί (3,1)</p></td>
+<td><p>κελί (3,2)</p></td>
+<td><p>κελί (3,3)</p></td>
+</tr>
+</tbody>
+</table>
+<hr class="docutils" />
+<p>Όπως βλέπετε πρέπει εμείς να σχηματίσουμε τον πίνακα, ακόμη και τα περιγράμματά του. Xρησιμοποιούμε το σύμβολο <code class="docutils literal notranslate"><span class="pre">=</span></code> για να σχηματίσουμε τα άνω και κάτω περιγράμματα του πίνακα και, προαιρετικά, για να διαχωρίσουμε μία γραμμή επικεφαλίδων (headers), από το κυρίως σώμα του πίνακα.</p>
+<p>Μπορούμε να χρησιμοποιήσουμε το σύμβολο <code class="docutils literal notranslate"><span class="pre">-</span></code> (παύλα, hyphen) για να υποδείξουμε επέκταση στηλών <em>σε μία γραμμή</em> (column span). Ας τροποιήσουμε το παραπάνω παράδειγμα για να δούμε το αποτέλεσμα:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">==========</span>  <span class="o">==========</span>  <span class="o">==========</span>
+<span class="n">Απλή</span> <span class="n">Στήλη</span>  <span class="n">Η</span> <span class="n">επέκταση</span> <span class="n">των</span> <span class="n">στηλών</span>
+            <span class="n">γίνεται</span> <span class="n">μόνο</span> <span class="n">σε</span> <span class="n">αυτή</span>
+            <span class="n">τη</span> <span class="n">γραμμή</span>
+<span class="o">----------</span>  <span class="o">----------------------</span>
+  <span class="n">A</span>           <span class="n">B</span>           <span class="n">Γ</span>
+<span class="o">==========</span>  <span class="o">==========</span>  <span class="o">==========</span>
+<span class="n">κελί</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span>  <span class="n">κελί</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span>  <span class="n">κελί</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span>
+<span class="n">κελί</span> <span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span>  <span class="n">κελί</span> <span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span>  <span class="n">κελί</span> <span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span>
+<span class="n">κελί</span> <span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span>  <span class="n">κελί</span> <span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span>  <span class="n">κελί</span> <span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span>
+<span class="o">----------</span>  <span class="o">----------</span>  <span class="o">----------</span>
+<span class="o">==========</span>  <span class="o">==========</span>  <span class="o">==========</span>
+</pre></div>
+</div>
+<hr class="docutils" />
+<p><em>Αποτέλεσμα</em></p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Απλή Στήλη</p></th>
+<th class="head" colspan="2"><p>Η επέκταση των στηλών
+γίνεται μόνο σε αυτή
+τη γραμμή</p></th>
+</tr>
+<tr class="row-even"><th class="head"><p>A</p></th>
+<th class="head"><p>B</p></th>
+<th class="head"><p>Γ</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-odd"><td><p>κελί (1,1)</p></td>
+<td><p>κελί (1,2)</p></td>
+<td><p>κελί (1,3)</p></td>
+</tr>
+<tr class="row-even"><td><p>κελί (2,1)</p></td>
+<td><p>κελί (2,2)</p></td>
+<td><p>κελί (2,3)</p></td>
+</tr>
+<tr class="row-odd"><td><p>κελί (3,1)</p></td>
+<td><p>κελί (3,2)</p></td>
+<td><p>κελί (3,3)</p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr class="docutils" />
+<p>Σημειώστε ότι τα <code class="docutils literal notranslate"><span class="pre">-</span></code> πρέπει να εκτείνονται σε όλο το εύρος της γραμμής που τα χρησιμοποιούμε (δεν μπορούμε να εισάγουμε παύλες μόνο για κάποιες στήλες). Τον ίδιο χαρακτήρα μπορούμε να τον χρησιμοποιήσουμε για να υποδείξουμε σκόπιμη εμφάνιση γραμμής. Για να το καταλάβετε παρατηρήσετε τα δύο παραδείγματα. Στο τελευταίο, έχουμε σκόπιμα εισάγει <code class="docutils literal notranslate"><span class="pre">-</span></code> μετά την τελευταία γραμμή του πίνακα. Το αποτέλεσμα δείχνει μία οριζόντια διαχωριστική γραμμή, μετά την τελευταία γραμμή του πίνακα. Στο προηγούμενο παράδειγμα δεν ισχύει κάτι τέτοιο.</p>
+<p>Ειδικότερα, λάβετε υπόψη τις εξής παρατηρήσεις:</p>
+<ol class="arabic">
+<li><p>Η πρώτη γραμμή κάθε πίνακα ξεκινάει πάντα με σύμβολα <code class="docutils literal notranslate"><span class="pre">=</span></code>. Δημιουργώντας
+ομάδες με <code class="docutils literal notranslate"><span class="pre">=</span></code> οριοθετούμε στήλες. Όσες ομάδες <code class="docutils literal notranslate"><span class="pre">=</span></code> δημιουργήσουμε,
+τόσες στήλες θα έχει ο πίνακας.</p>
+<p>Μεταξύ των ομάδων <code class="docutils literal notranslate"><span class="pre">=</span></code> (στήλες) πρέπει να υπάρχει τουλάχιστο ένα κενό (προτείνεται τουλάχιστο δύο ή περισσότερα) για να είναι εμφανή τα όρια των στηλών.</p>
+<p>Ένας πίνακας πρέπει να έχει τουλάχιστο δύο στήλες. Αν έχει μία, η σήμανση με τα <code class="docutils literal notranslate"><span class="pre">=</span></code> θα ερμηνευτεί σαν τίτλος ενότητας (στο αποτέλεσμα δε θα δείτε πίνακα αλλά έναν τίτλο).</p>
+<p>Το κάτω όριο του πίνακα σχηματίζεται με ένα ακριβώς ίδιο σύνολο ομάδων <code class="docutils literal notranslate"><span class="pre">=</span></code>,
+όπως η πρώτη γραμμή.</p>
+</li>
+<li><p>Μπορούμε να εισάγουμε επικεφαλίδες στηλών (headers) οι οποίοι πρέπει να
+διαχωρίζονται από το υπόλοιπο σώμα, με όμοιο σύνολο ομάδων με <a href="#id1"><span class="problematic" id="id2">``</span></a>=``(header row seperator). Μετά τον seperator δεν πρέπει να ακολουθεί κενή γραμμή αλλιώς η reST θα το εκλάβει σαν το κάτω όριο του πίνακα.</p></li>
+<li><p>Στο κυρίως σώμα του πίνακα, κάθε γραμμή κειμένου ξεκινάει μία νέα γραμμή
+πίνακα (row). Εξαίρεση είναι όταν υπάρχει κενό κελί στην πρώτη στήλη οπότε η γραμμή κειμένου εκλαμβάνεται σαν συνέχεια κάποιας άλλης γραμμής και το πιο πιθανό είναι ότι θα γίνει λάθος ερμηνεία από τη reST. Αυτό είναι εγγενές πρόβλημα των απλών πινάκων. Γενικά υπάρχουν δύο περιορισμοί για τα κελιά της πρώτης στήλης:</p>
+<ul class="simple">
+<li><p>Δεν μπορεί να είναι κενά (εκτός αν κάνουμε κάποια τρικ, δες τη συμβουλή
+παρακάτω).</p></li>
+<li><p>Μπορούν να περιέχουν μόνο μία γραμμή κειμένου, όχι άλλες παραγράφους,
+όχι άλλο περιεχόμενο.</p></li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">Πρακτική συμβουλή</p>
+<p>Μπορούμε να έχουμε κενά κελιά οπουδήποτε στον πίνακα, εκτός από τα κελιά της πρώτης στήλης. Αν θέλετε σκόπιμα κενό κελί στην πρώτη στήλη, κάντε κάτι από τα παρακάτω</p>
+<ul class="simple">
+<li><p>Χρησιμοποιήστε ένα κενό σχόλιο με <code class="docutils literal notranslate"><span class="pre">..</span></code> . Θα αγνοηθεί στην επεξεργασία
+(δες ΣΧΟΛΙΑ).</p></li>
+<li><p>Αποδεσμεύστε έναν κενό χαρακτήρα με backslash <code class="docutils literal notranslate"><span class="pre">\</span></code> (δες ΧΑΡΑΚΤΗΡΕΣ
+ΔΙΑΦΥΓΗΣ)</p></li>
+</ul>
+</div>
+</li>
+<li><p>Επιτρέπεονται κενές γραμμές μέσα σε έναν πίνακα, με τις εξής
+ιδιαιτερότητες. Κενές γραμμές μεταξύ γραμμών πίνακα (rows) θα αγνοηθούν στην επεξεργασία. Κενές γραμμές μέσα σε κελιά με εκτεταμένο περιεχόμενο, είναι υποχρεωτικές για να διαχωρίζουν το περιεχόμενο (παραγράφους, άλλα στοιχεία κειμένου κ.λπ.). Ισχύει ο περιορισμός για τα κελιά της πρώτης στήλης (δες παρατήρηση 3).</p></li>
+<li><p>Η τελευταία (δεξιά) στήλη ενός πίνακα, δεν έχει περιορισμούς. Μπορείτε να
+συνεχίσετε να γράφετε και πέρα από τα όρια των <code class="docutils literal notranslate"><span class="pre">=</span></code>. Ωστόσο, συνιστάται να δημιουργείτε αρκετά μεγάλα περιγράμματα ώστε να περιέχουν ολόκληρο το κείμενο. Να γράφετε κείμενο μόνο μέχρι τα όρια των περιγραμμάτων τους, για όλες τις στήλες (ακόμη και τη δεξιά)</p></li>
+</ol>
+<p>Ας δούμε όλες τις παραπάνω παρατηρήσεις μέσα σε ένα εκτεταμένο παράδειγμα, απλού πίνακα:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>===============  ============================  ========================
+Πρώτη Στήλη      Δεύτερη Στήλη                 Τρίτη Στήλη
+===============  ============================  ========================
+Πρώτη στήλη ...  Στην πρώτη γραμμή σχηματίστε  Μεταξύ των ομάδων με
+                 ομάδες συμβόλων ``=``, για    ``=`` να αφήνετε πάντα
+                 να οριοθετήστε τις στήλες.    τουλάχιστο δύο κενά.
+                                               Έτσι θα ξέρει η reST τα
+                 Οι ίδιες ακριβώς ομάδες       όρια των στηλών
+                 πρέπει να υπάρχουν και στο    (παρατήρηση 1).
+                 τέλος του πίνακα. Αν υπάρχει
+                 διαφορά έστω και σε ένα
+                 ``=``, θα αναδυθεί λάθος
+                 (παρατήρηση 1).
+
+... όχι κενά,    Αν θέλετε επικεφαλίδες στην   Μπορείτε να αφήσετε κενά
+                 πρώτη γραμμή του πίνακα       κελιά, οπουδήποτε σε έναν
+                 (row), θα πρέπει να τις       πίνακα, εκτός από τα
+                 διαχωρίσετε και πάλι με τις   κελιά της πρώτης στήλης.
+                 ίδιες ομάδες ``=``
+                 (παρατήρηση 2).               Αν αφήστε κενό ένα κελί
+                                               πρώτης στήλης, δε θα
+                                               γίνει επεξεργασία του
+                                               πίνακα (παρατήρηση 3).
+
+μόνο μία γραμμή  Αν θέλετε σκόπιμα κενό κελί   Επίσης τα κελιά της πρώτης
+                 στην πρώτη στήλη, κάντε       στήλης δεν μπορεί να
+                 κάτι από τα επόμενα:          εκτείνονται σε περισσότερες
+                                               από μία γραμμές. Άρα σε αυτά
+                 - εισάγετε ένα κενό σχόλιο    δεν μπορούμε να εισάγουμε
+                   με ``..``                   επιπλέον περιεχόμενο
+                 - Εισάγετε ένα κενό με        (παρατήρηση 3).
+                   αποδέσμευση (escape).
+                   Χρησιμοποιήστε το
+                   χαρακτήρα ``\``
+                   (backslash και κενό,
+                   δες το τελευταίο κελί
+                   της πρώτης στήλης, αυτού
+                   του πίνακα, στον κώδικα)
+
+                 (παρατήρηση 3)
+
+(παρατήρηση 3)   Μπορείτε να εισάγετε κενές    Οι κενές γραμμές όμως
+                 γραμμές μεταξύ των γραμμών    υποχρεωτκές όταν θέλετε
+                 του πίνακα (rows). Αυτές θα   να προσθέσετε επιπλέον
+                 αγνοηθούν στην επεξεργασία    περιεχόμενο σε ένα κελί.
+                 (βοηθάνε μόνο εσάς όταν       Σε αυτή την περίπτωση
+                 σχηματίζετε τον πίνακα, όπως  πρέπει να αφήνετε μία
+                 σε αυτό το παράδειγμα)        κενή γραμμή για κάθε
+                                               στοιχείο κειμένου που
+                 (παρατήρηση 4)                προσθέτετε.
+
+                                               Όπως εδώ, προσθέτουμε
+                                               μία δεύτερη παράγραφο και
+                                               μία λίστα
+
+                                               - ένα
+                                               - δύο
+                                               - τρία
+
+                                               (παρατήρηση 4)
+
+\                Η δεξιά στήλη ενός πίνακα     ... μπορείτε δηλαδή να
+                 και μόνο αυτή, δεν            συνεχίσετε να γράφετε κείμενο
+                 περιορίζεται από τα όρια του  και πέρα από τα όρια του
+                 πίνακα (συνέχεια δεξιά)...    πίνακα (δες τον κώδικα).
+                                               Παρόλα αυτά συνιστάται να
+                                               περιορίζετε και το
+                                               περιεχόμενο της δεξιάς
+                                               στήλης στα περιθώρια.
+                                               Αν χρειαστεί, ρυθμίστε
+                                               κατάλληλα τα όρια των
+                                               στηλών (παρατήρηση 5)
+===============  ============================  ========================
+</pre></div>
+</div>
+<hr class="docutils" />
+<p><em>Αποτέλεσμα</em></p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 38%" />
+<col style="width: 42%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Πρώτη Στήλη</p></th>
+<th class="head"><p>Δεύτερη Στήλη</p></th>
+<th class="head"><p>Τρίτη Στήλη</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Πρώτη στήλη …</p></td>
+<td><p>Στην πρώτη γραμμή σχηματίστε
+ομάδες συμβόλων <code class="docutils literal notranslate"><span class="pre">=</span></code>, για
+να οριοθετήστε τις στήλες.</p>
+<p>Οι ίδιες ακριβώς ομάδες
+πρέπει να υπάρχουν και στο
+τέλος του πίνακα. Αν υπάρχει
+διαφορά έστω και σε ένα
+<code class="docutils literal notranslate"><span class="pre">=</span></code>, θα αναδυθεί λάθος
+(παρατήρηση 1).</p>
+</td>
+<td><p>Μεταξύ των ομάδων με
+<code class="docutils literal notranslate"><span class="pre">=</span></code> να αφήνετε πάντα
+τουλάχιστο δύο κενά.
+Έτσι θα ξέρει η reST τα
+όρια των στηλών
+(παρατήρηση 1).</p></td>
+</tr>
+<tr class="row-odd"><td><p>… όχι κενά,</p></td>
+<td><p>Αν θέλετε επικεφαλίδες στην
+πρώτη γραμμή του πίνακα
+(row), θα πρέπει να τις
+διαχωρίσετε και πάλι με τις
+ίδιες ομάδες <code class="docutils literal notranslate"><span class="pre">=</span></code>
+(παρατήρηση 2).</p></td>
+<td><p>Μπορείτε να αφήσετε κενά
+κελιά, οπουδήποτε σε έναν
+πίνακα, εκτός από τα
+κελιά της πρώτης στήλης.</p>
+<p>Αν αφήστε κενό ένα κελί
+πρώτης στήλης, δε θα
+γίνει επεξεργασία του
+πίνακα (παρατήρηση 3).</p>
+</td>
+</tr>
+<tr class="row-even"><td><p>μόνο μία γραμμή</p></td>
+<td><p>Αν θέλετε σκόπιμα κενό κελί
+στην πρώτη στήλη, κάντε
+κάτι από τα επόμενα:</p>
+<ul class="simple">
+<li><p>εισάγετε ένα κενό σχόλιο
+με <code class="docutils literal notranslate"><span class="pre">..</span></code></p></li>
+<li><p>Εισάγετε ένα κενό με
+αποδέσμευση (escape).
+Χρησιμοποιήστε το
+χαρακτήρα <code class="docutils literal notranslate"><span class="pre">\</span></code>
+(backslash και κενό,
+δες το τελευταίο κελί
+της πρώτης στήλης, αυτού
+του πίνακα, στον κώδικα)</p></li>
+</ul>
+<p>(παρατήρηση 3)</p>
+</td>
+<td><p>Επίσης τα κελιά της πρώτης
+στήλης δεν μπορεί να
+εκτείνονται σε περισσότερες
+από μία γραμμές. Άρα σε αυτά
+δεν μπορούμε να εισάγουμε
+επιπλέον περιεχόμενο
+(παρατήρηση 3).</p></td>
+</tr>
+<tr class="row-odd"><td><p>(παρατήρηση 3)</p></td>
+<td><p>Μπορείτε να εισάγετε κενές
+γραμμές μεταξύ των γραμμών
+του πίνακα (rows). Αυτές θα
+αγνοηθούν στην επεξεργασία
+(βοηθάνε μόνο εσάς όταν
+σχηματίζετε τον πίνακα, όπως
+σε αυτό το παράδειγμα)</p>
+<p>(παρατήρηση 4)</p>
+</td>
+<td><p>Οι κενές γραμμές όμως
+υποχρεωτκές όταν θέλετε
+να προσθέσετε επιπλέον
+περιεχόμενο σε ένα κελί.
+Σε αυτή την περίπτωση
+πρέπει να αφήνετε μία
+κενή γραμμή για κάθε
+στοιχείο κειμένου που
+προσθέτετε.</p>
+<p>Όπως εδώ, προσθέτουμε
+μία δεύτερη παράγραφο και
+μία λίστα</p>
+<ul class="simple">
+<li><p>ένα</p></li>
+<li><p>δύο</p></li>
+<li><p>τρία</p></li>
+</ul>
+<p>(παρατήρηση 4)</p>
+</td>
+</tr>
+<tr class="row-even"><td><p></p></td>
+<td><p>Η δεξιά στήλη ενός πίνακα</p>
+<p>και μόνο αυτή, δεν
+περιορίζεται από τα όρια του
+πίνακα (συνέχεια δεξιά)…</p>
+</td>
+<td><p>… μπορείτε δηλαδή να
+συνεχίσετε να γράφετε κείμενο
+και πέρα από τα όρια του πίνακα
+(δες τον κώδικα). Παρόλα
+αυτά συνιστάται να
+περιορίζετε και το
+περιεχόμενο της δεξιάς
+στήλης, στα περιθώρια.
+Αν χρειαστεί, ρυθμίστε
+κατάλληλα τα όρια των
+στηλών (παρατήρηση 5)</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<hr class="docutils" />
+<div class="section" id="grid-tables">
+<h2>Grid Tables<a class="headerlink" href="#grid-tables" title="Μόνιμος σύνδεσμος σε αυτήν την κεφαλίδα">¶</a></h2>
+<p>Οι πίνακες πλέγματος, σε αντίθεση με τους απλούς, είναι πλήρεις αναπαραστάσεις πινάκων, τους προδιαγράφουμε με κάθε λεπτομέρεια, ορίζοντας όλα τα περιγράμματα.
+Ας δούμε ένα παράδειγμα:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">+------------+-------------+------------+</span>
+<span class="o">|</span>      <span class="n">A</span>     <span class="o">|</span>      <span class="n">B</span>      <span class="o">|</span>     <span class="n">Γ</span>      <span class="o">|</span>
+<span class="o">+============+=============+============+</span>
+<span class="o">|</span> <span class="n">κελί</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span> <span class="o">|</span>  <span class="n">κελί</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span> <span class="o">|</span> <span class="n">κελί</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span> <span class="o">|</span>
+<span class="o">+------------+-------------+------------+</span>
+<span class="o">|</span> <span class="n">κελί</span> <span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span> <span class="o">|</span> <span class="n">κελί</span> <span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span>  <span class="o">|</span> <span class="n">κελί</span> <span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span> <span class="o">|</span>
+<span class="o">+------------+-------------+------------+</span>
+<span class="o">|</span> <span class="n">κελί</span> <span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span> <span class="o">|</span> <span class="n">κελί</span> <span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span>  <span class="o">|</span> <span class="n">κελί</span> <span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span> <span class="o">|</span>
+<span class="o">+------------+-------------+------------+</span>
+</pre></div>
+</div>
+<hr class="docutils" />
+<p><em>Αποτέλεσμα</em></p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 32%" />
+<col style="width: 35%" />
+<col style="width: 32%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>A</p></th>
+<th class="head"><p>B</p></th>
+<th class="head"><p>Γ</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>κελί (1,1)</p></td>
+<td><p>κελί (1,2)</p></td>
+<td><p>κελί (1,3)</p></td>
+</tr>
+<tr class="row-odd"><td><p>κελί (2,1)</p></td>
+<td><p>κελί (2,2)</p></td>
+<td><p>κελί (2,3)</p></td>
+</tr>
+<tr class="row-even"><td><p>κελί (3,1)</p></td>
+<td><p>κελί (3,2)</p></td>
+<td><p>κελί (3,3)</p></td>
+</tr>
+</tbody>
+</table>
+<hr class="docutils" />
+<p>Όπως βλέπετε πρέπει εμείς να «ζωγραφίσουμε» όλο τον πίνακα, καθορίζοντας πλήρως όχι μόνο το περιεχόμενο αλλά και τα περιγράμματά του. Θυμηθείτε ότι στους απλούς πίνακες οριοθετούμε μόνο τις στήλες και στη συνέχεια ακολουθούμε κάποιους κανόνες.</p>
+<p>Για να σχηματίσουμε τον πίνακα χρησιμοποιούμε τα σύμβολα <code class="docutils literal notranslate"><span class="pre">-</span></code>, <code class="docutils literal notranslate"><span class="pre">=</span></code>, <code class="docutils literal notranslate"><span class="pre">|</span></code> και <code class="docutils literal notranslate"><span class="pre">+</span></code>. Τα <code class="docutils literal notranslate"><span class="pre">-</span></code> τα χρησιμοποιούμε για όλα τα περιγράμματα, τα <code class="docutils literal notranslate"><span class="pre">+</span></code> μόνο για τα σημεία τομής γραμμών/στηλών, τα <code class="docutils literal notranslate"><span class="pre">|</span></code> για να οριοθετούμε στήλες και τα <code class="docutils literal notranslate"><span class="pre">=</span></code> για να διαχωρίσουμε τις επικεφαλίδες των στηλών (προαιρετικά).</p>
+<p>Λόγω του τρόπου κατασκευής τους, οι πίνακες πλέγματος επιτρέπουν την αυθαίρετη προσθήκη περιεχομένου (στοιχεία κειμένου) στα κελιά. Δεν παρουσιάζουν κανένα από τους περιορισμούς των απλών πινάκων όπως αυτούς για τα κελιά της πρώτης στήλης. Παρόλα αυτά και αυτό πιθανώς είναι εμφανές, η κατασκευή ακόμη και ενός απλού πίνακα πλέγματος, απαιτεί κάποιο βαθμό προσπάθειας, ο οποίος αυξάνεται όσο πιο πολύπλοκος γίνεται ο πίνακας.</p>
+<p>Δεν υπάρχουν κάποιοι ιδιαίτεροι κανόνες για την κατασκευή αυτών των πινάκων. Τα βασικά σημεία που θέλουν προσοχή είναι:</p>
+<ul class="simple">
+<li><p>Το περιεχόμενο των κελιών πρέπει να έχει τουλάχιστο ένα κενό πρειθώριο από τα
+όριά του (αριστερά – δεξιά)</p></li>
+<li><p>Στη σπάνια περίπτωση που θα χρειαστεί να χρησιμοποιήσετε μία κάθετη μπάρα
+<code class="docutils literal notranslate"><span class="pre">|</span></code>, μέσα σε κάποιο κελί και αυτή τύχει να βρίσκεται ακριβώς κάτω από μία όμοια για οριοθέτηση στήλης, η reST δε θα το καταλάβει. Απλά προσθέστε ή αφαιρέστε ένα κενό για να αλλάξετε αυτή την ευθυγράμμιση.</p></li>
+</ul>
+<p>Ας δούμε ένα σύνθετο παράδειγμα πίνακα πλέγματος:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">+----------------------+--------------+---------------+-----------------+</span>
+<span class="o">|</span> <span class="n">Γραμμή</span> <span class="n">επικεφαλίδων</span>  <span class="o">|</span> <span class="n">Επικεφaλίδα</span> <span class="mi">2</span><span class="o">|</span> <span class="n">Επικεφαλίδα</span> <span class="mi">3</span> <span class="o">|</span> <span class="n">Επικεφαλίδα</span> <span class="mi">4</span>   <span class="o">|</span>
+<span class="o">|</span>                      <span class="o">|</span>              <span class="o">|</span>               <span class="o">|</span>                 <span class="o">|</span>
+<span class="o">|</span> <span class="n">Επικεφαλίδα</span> <span class="mi">1</span>        <span class="o">|</span>              <span class="o">|</span>               <span class="o">|</span>                 <span class="o">|</span>
+<span class="o">+======================+==============+===============+=================+</span>
+<span class="o">|</span> <span class="n">γραμμή</span> <span class="mi">1</span><span class="p">,</span> <span class="n">στήλη</span> <span class="mi">1</span>    <span class="o">|</span> <span class="n">στήλη</span> <span class="mi">2</span>      <span class="o">|</span> <span class="n">στήλη</span> <span class="mi">3</span>       <span class="o">|</span> <span class="n">στήλη</span> <span class="mi">4</span>         <span class="o">|</span>
+<span class="o">+----------------------+--------------+---------------+-----------------+</span>
+<span class="o">|</span> <span class="n">γραμμή</span> <span class="mi">2</span>             <span class="o">|</span> <span class="n">Συγχώνευση</span> <span class="n">κελιών</span> <span class="n">σε</span> <span class="n">στήλες</span>                    <span class="o">|</span>
+<span class="o">+----------------------+-------------------+----------------------------+</span>
+<span class="o">|</span> <span class="n">γραμμή</span> <span class="mi">3</span>             <span class="o">|</span> <span class="n">Συγχώνευση</span> <span class="n">κελιών</span> <span class="o">|</span> <span class="n">Ένα</span> <span class="n">κελί</span> <span class="n">μπορεί</span> <span class="n">να</span>         <span class="o">|</span>
+<span class="o">|</span>                      <span class="o">|</span> <span class="n">σε</span> <span class="n">γραμμές</span>        <span class="o">|</span> <span class="n">περιλαμβάνει</span> <span class="n">και</span> <span class="n">επιπλέον</span>  <span class="o">|</span>
+<span class="o">|</span>                      <span class="o">|</span>                   <span class="o">|</span> <span class="n">υλικό</span> <span class="n">όπως</span> <span class="n">μία</span> <span class="n">λίστα</span>       <span class="o">|</span>
+<span class="o">|</span>                      <span class="o">|</span>                   <span class="o">|</span>                            <span class="o">|</span>
+<span class="o">|</span>                      <span class="o">|</span>                   <span class="o">|</span> <span class="o">-</span> <span class="n">τα</span> <span class="n">κελιά</span> <span class="n">του</span> <span class="n">πίνακα</span>      <span class="o">|</span>
+<span class="o">+----------------------+</span>                   <span class="o">|</span> <span class="o">-</span> <span class="n">μπορούν</span> <span class="n">να</span> <span class="n">περιέχουν</span>     <span class="o">|</span>
+<span class="o">|</span> <span class="n">γραμμή</span> <span class="mi">4</span>             <span class="o">|</span>                   <span class="o">|</span> <span class="o">-</span> <span class="n">άλλα</span> <span class="n">στοιχεία</span> <span class="n">κειμένου</span>   <span class="o">|</span>
+<span class="o">+----------------------+-------------------+----------------------------+</span>
+</pre></div>
+</div>
+<hr class="docutils" />
+<p><em>Αποτέλεσμα</em></p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 21%" />
+<col style="width: 6%" />
+<col style="width: 15%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Γραμμή επικεφαλίδων</p>
+<p>Επικεφαλίδα 1</p>
+</th>
+<th class="head"><p>Επικεφaλίδα 2</p></th>
+<th class="head" colspan="2"><p>Επικεφαλίδα 3</p></th>
+<th class="head"><p>Επικεφαλίδα 4</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>γραμμή 1, στήλη 1</p></td>
+<td><p>στήλη 2</p></td>
+<td colspan="2"><p>στήλη 3</p></td>
+<td><p>στήλη 4</p></td>
+</tr>
+<tr class="row-odd"><td><p>γραμμή 2</p></td>
+<td colspan="4"><p>Συγχώνευση κελιών σε στήλες</p></td>
+</tr>
+<tr class="row-even"><td><p>γραμμή 3</p></td>
+<td colspan="2" rowspan="2"><p>Συγχώνευση κελιών
+σε γραμμές</p></td>
+<td colspan="2" rowspan="2"><p>Ένα κελί μπορεί να
+περιλαμβάνει και επιπλέον
+υλικό όπως μία λίστα</p>
+<ul class="simple">
+<li><p>τα κελιά του πίνακα</p></li>
+<li><p>μπορούν να περιέχουν</p></li>
+<li><p>άλλα στοιχεία κειμένου</p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><p>γραμμή 4</p></td>
+</tr>
+</tbody>
+</table>
+<hr class="docutils" />
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 11%" />
+<col style="width: 39%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>simple text</p></td>
+<td><p>2</p></td>
+<td><p>3</p></td>
+</tr>
+<tr class="row-even"><td><p>simple text</p></td>
+<td><p>2</p></td>
+<td><p>3</p></td>
+</tr>
+<tr class="row-odd"><td><p>simple text</p></td>
+<td><p>2</p></td>
+<td><p>3</p></td>
+</tr>
+<tr class="row-even"><td><p>simple text</p></td>
+<td><p>2</p></td>
+<td><p>3</p></td>
+</tr>
+</tbody>
+</table>
+<dl class="rst directive">
+<dt id="directive-0">
+<code class="sig-name descname">.. csv-table::</code><a class="headerlink" href="#directive-0" title="Μόνιμος σύνδεσμος σε αυτόν τον ορισμό">¶</a></dt>
+<dd><p>This directive inserts a «TOC tree» at the current location, using the
+individual TOCs (including «sub-TOC trees») of the documents given in the
+directive body.  Relative document names (not beginning with a slash) are
+relative to the document the directive occurs in, absolute names are relative
+to the source directory.  A numeric <code class="docutils literal notranslate"><span class="pre">maxdepth</span></code> option may be given to
+indicate the depth of the tree; by default, all levels are included.</p>
+<p>The representation of «TOC tree» is changed in each output format.  The
+builders that output multiple files (ex. HTML) treat it as a collection of
+hyperlinks.  On the other hand, the builders that output a single file (ex.
+LaTeX, man page, etc.) replace it with the content of the documents on the
+TOC tree. :literal: <a href="#id3"><span class="problematic" id="id4">`</span></a>.. `</p>
+</dd></dl>
+
+</div>
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2020, Alex M..<br/>
+      Δημιουργήθηκε με το <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.3.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

@@ -3,10 +3,10 @@
     "editor.minimap.enabled": false,
     "editor.wordWrap": "on",
     "editor.wordWrap":"wordWrapColumn",
-    "editor.wordWrapColumn":100,
+    "editor.wordWrapColumn":80,
     "editor.rulers": [
-        70,
-        100
+        0,
+        80
     ],
     "workbench.tree.indent": 24,
     "workbench.tree.renderIndentGuides": "always",

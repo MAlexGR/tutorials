@@ -12,6 +12,7 @@ faker = "*"
 sphinx-serve = "*"
 sphinx-material = {git = "https://github.com/bashtage/sphinx-material.git"}
 rinohtype = "*"
+sphinx-bootstrap-theme = "*"
 
 [requires]
 python_version = "3.7"
