@@ -144,7 +144,7 @@ html_theme_path = sphinx_bootstrap_theme.get_html_theme_path()
 #}
 
 html_theme_options = {
-    'navbar_title': 'Οδηγοί Επιβίωσης', # Ο βασικός τίτλος στο
+    'navbar_title': 'Athena Docs',      # Ο βασικός τίτλος στο
                                         # navication bar
                                           
     'navbar_site_name': 'Site',         # Tab name for entire site.

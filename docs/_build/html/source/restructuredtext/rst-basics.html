@@ -78,7 +78,8 @@
       aria-labelledby="dLabelLocalToc"><ul>
 <li><a class="reference internal" href="#">Βασικά στοιχεία</a><ul>
 <li><a class="reference internal" href="#id2">Παράγραφος</a></li>
-<li><a class="reference internal" href="#tables">Tables</a></li>
+<li><a class="reference internal" href="#directives">Directives</a></li>
+<li><a class="reference internal" href="#lengths">Lengths</a></li>
 </ul>
 </li>
 </ul>
@@ -149,7 +150,8 @@
 </li><ul>
 <li><a class="reference internal" href="#">Βασικά στοιχεία</a><ul>
 <li><a class="reference internal" href="#id2">Παράγραφος</a></li>
-<li><a class="reference internal" href="#tables">Tables</a></li>
+<li><a class="reference internal" href="#directives">Directives</a></li>
+<li><a class="reference internal" href="#lengths">Lengths</a></li>
 </ul>
 </li>
 </ul>
@@ -160,7 +162,9 @@
       
   <div class="section" id="id1">
 <h1>Βασικά στοιχεία<a class="headerlink" href="#id1" title="Μόνιμος σύνδεσμος σε αυτήν την κεφαλίδα">¶</a></h1>
-<p>Η reST δημιουργήθηκε με σκοπό</p>
+<p>Η reST είναι μία markup γλώσσα προγραμματισμού απλού κειμένου. Διαθέτει απλές και ευνόητες κατασκευές με τις οποίες μπορεί κάποιος με ευκολία να δημιουργήσει κέιμενα κάθε πολυπλοκότητας και έκτασης. Οι κατασκευές αυτές δημιουργήθηκαν με τρόπο ώστε να είναι, κατ” αρχάς εύκολα κατανοητές για το χρήστη αλλά και αποδοτικές στη χρήση τους.</p>
+<p>Η γλώσσα πρακτικά είναι δομημένη γύρω από έναν <em>συντακτικό αναλυτή</em> (parser), ο οποίος αναλαμβάνει να αναλύσει το αρχείο με το κατάλληλα σημασμένο κείμενο και να το τροφοδοτήσει στο σύστημα που θα αναλάβει τη διαμόρφωση και παρουσίαση του αποτελέσματος. Αυτό με απλά λόγια σημαίνει ότι ο χρήστης γράφει το κείμενό του σε ένα ειδικό αρχείο απλού κειμένου (plain text file), σηματοδοτεί (markup) κατάλληλα τα μέρη που θέλει να διαμορφωθούν με συγκεκριμένο τρόπο και επιλέγει τη διαμόρφωση εξόδου (π.χ. HTML, PDF κ.λπ.). Ο parser αναλαμβάνει να «αποσυναρμολογήσει» το κείμενο στα βασικά του δομικά στοιχεία, να «μεταφράσει» όλες τις reST σημάνσεις σε γλώσσα που είναι κατανοητή από το σύστημα που θα δεχτεί το αποτέλεσμα και το τροφοδοτεί σε κατάλληλο <em>συντάκτη</em> (writer). Αν ο χρήστης επιλέξει σα μορφή εξόδου του αρχείου του μία HTML σελίδα, ο parser θα τροφοδοτήσει το ανελυμένο κείμενο σε ένα HTML writer. Ανάλογες διαδικασίες ισχύουν για κάθε επιλεγμένη μορφή διαμόρφωσης (όπως LaTeX, PDF, manpages κ.λπ.).</p>
+<p>Πρακτικά λοιπόν όταν μιλάμε για τη reStructuredText (όπως είπαμε, reST ή RST ή ReST για συντομία, εμείς εδώ θα χρησιμοποιούμε το reST), εννοούμε μία γλώσσα προγραμματισμού <strong>και</strong> τον αντίστοιχο parser (σε άλλες γλώσσες προγραμματισμού το ρόλο του αναλυτή αναλαμβάνει κάποιος compiler ή interpreter).</p>
 <div class="section" id="id2">
 <h2>Παράγραφος<a class="headerlink" href="#id2" title="Μόνιμος σύνδεσμος σε αυτήν την κεφαλίδα">¶</a></h2>
 <p>Η παράγραφος είναι το βασικό μπλοκ κειμένου σε ένα κείμενο γραμμένο σε reST.</p>
@@ -190,8 +194,11 @@
 </pre></div>
 </div>
 </div>
-<div class="section" id="tables">
-<h2>Tables<a class="headerlink" href="#tables" title="Μόνιμος σύνδεσμος σε αυτήν την κεφαλίδα">¶</a></h2>
+<div class="section" id="directives">
+<span id="id3"></span><h2>Directives<a class="headerlink" href="#directives" title="Μόνιμος σύνδεσμος σε αυτήν την κεφαλίδα">¶</a></h2>
+</div>
+<div class="section" id="lengths">
+<span id="id4"></span><h2>Lengths<a class="headerlink" href="#lengths" title="Μόνιμος σύνδεσμος σε αυτήν την κεφαλίδα">¶</a></h2>
 </div>
 </div>
 

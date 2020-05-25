@@ -6,5 +6,5 @@ IDE
 
 Πριν συνεχίσουμε να παραπέμψουμε στα αντίστοιχα άρθρα της `ΒΙΚΙΠΑΙΔΕΙΑ`_ (όχι και πολύ αναλυτικό) και `WIKIPEDIA`_. Εκεί θα βρείτε τις βασικές πληροφορίες που θα χρειαστείτε αν θέλετε να εμβαθύνετε στη συγκεκριμένη έννοια.
     .. _ΒΙΚΙΠΕΔΙΑ: https://tinyurl.com/ybr4onat
-    .. _WIKIPEDIA: https://en.wikipedia.org/wiki/Integrated_development_environment
+    .. _WIKIPEDIA: https://en.wikipedia.org/wiki/ Integrated_development_environment
 
