@@ -1,4 +1,4 @@
 .. _directives:
 
-Directives
------------
+Οδηγίες (Directives)
+**********************
