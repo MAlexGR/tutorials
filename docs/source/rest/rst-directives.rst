@@ -1,4 +1,5 @@
-.. _directives:
+.. _rest-directives-ref:
 
 Οδηγίες (Directives)
 **********************
+

@@ -1,0 +1,114 @@
+digraph "sphinx-ext-graphviz"
+{
+size = "8,6";
+rankdir = "LR";
+splines = "false";
+graph [fontname="Verdana", fontsize="11"];
+node [fontname="Verdana", fontsize="11"];
+edge [fontname="Sans", fontsize="9"];
+
+py1 [
+        shape     = "record",
+        label     = "Python\ndocs/source/python\n(py-start.rst)",
+        fillcolor = chartreuse,
+        style     = filled,
+        href      = "https://www.sphinx-doc.org/",
+        target    = "_blank"
+    ];
+
+py [
+        shape = "record",
+        label = "{Name:\l|Python}|{files in:\l|docs/source/python\l}|{this
+                file:\l|py-start.rst\l}",
+        fillcolor = chartreuse,
+        style = filled,
+    ]
+
+r   [
+        shape = "record",
+        label = "{Name:\l|R}|{files in:\l|docs/source/r\l}|{this file:\l|
+                r-start.rst\l}",
+        fillcolor = chartreuse,
+        style = filled,
+    ];
+
+RBasics [
+            label="'Basics'\l(r-basics.rst)",
+            shape="underline",
+        ];
+
+rest    [
+            shape = "record",
+            label = "{Name:\l|reStructuredText}|{files in:\l|docs/source/rest\l}
+                    |{this file:\l|rst-start.rst\l}",
+            fillcolor = chartreuse,
+            style = filled,
+        ]
+
+dot     [
+            label="GraphViz",
+            shape="component",
+            href="https://www.graphviz.org/",
+            target="_blank"
+        ];
+
+basics          [
+                    label="GraphViz",
+                    shape="folder",
+                    href="https://www.graphviz.org/",
+                    target="_blank"
+                ];
+
+docs            [
+                    label="Start\n(index.rst)",
+                    shape="folder",
+                    fillcolor=green,
+                    style=filled
+                ];
+
+RestBasics      [
+                    label="'Basics'\l(rst-basics.rst)",
+                    shape="underline",
+                ];
+
+RestDocStruct   [
+                    label="Document Construct\l(rst-doc-structure.rst)",
+                    shape="underline",
+                ];
+
+RestElements    [
+                    label="Body Elements\l(rst-elements.rst)",
+                    shape="underline",
+                ];
+
+svg_file        [
+                    label="SVG Image",
+                    shape="note",
+                    fontcolor=white,
+                    fillcolor="#3333ff",
+                    style=filled
+                ];
+
+html_files  [
+               label="HTML Files",
+               shape="folder",
+               fillcolor=yellow,
+               style=filled];
+
+{rank = same; py r rest;}
+
+docs -> py [tailport="e", headport="w"];
+docs -> r [tailport="e", headport="w"];
+docs -> rest [tailport="e", headport="w"];
+
+py -> dot [label=" call ", style=dashed, arrowhead=none];
+dot -> svg_file [label=" draw "];
+py -> html_files [label=" render "];
+
+r -> RBasics [tailport="e", headport="w"];
+
+rest -> RestBasics [tailport="e", headport="w"];
+rest -> RestDocStruct [tailport="e", headport="w"];
+rest -> RestElements [tailport="e", headport="w"];
+svg_file -> html_files [style=dashed];
+}
