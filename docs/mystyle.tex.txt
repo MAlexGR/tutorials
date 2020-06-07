@@ -1,0 +1,16 @@
+\usepackage{geometry}
+\usepackage{xcolor}
+
+%\usepackage{charter}
+%\usepackage[defaultsans]{lato}
+%\usepackage{libertine}
+%\usepackage{inconsolata}
+
+\setmainfont{Georgia Pro}
+\setsansfont{Georgia Pro}
+\setmonofont{Consolas}
+
+
+\definecolor{VerbatimColor}{gray}{0.95}
+
+\setcounter{tocdepth}{2}

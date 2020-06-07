@@ -5,6 +5,7 @@ verify_ssl = true
 
 [dev-packages]
 pylint = "*"
+ipykernel = "*"
 
 [packages]
 sphinx = "*"
@@ -13,6 +14,9 @@ rinohtype = "*"
 sphinx-bootstrap-theme = "*"
 sphinxcontrib-mermaid = "*"
 graphviz = "*"
+sphinx-tabs = "*"
+nbsphinx = "*"
+sphinx-copybutton = "*"
 
 [requires]
 python_version = "3.7"
