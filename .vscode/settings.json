@@ -3,8 +3,8 @@
     
     "editor.minimap.enabled": false,
     "editor.wordWrap":"wordWrapColumn",
-    "editor.wordWrapColumn":80,
-    "editor.rulers": [100, 80],
+    "editor.wordWrapColumn":100,
+    "editor.rulers": [100, 70],
     
     "workbench.tree.indent": 24,
     "workbench.tree.renderIndentGuides": "always",

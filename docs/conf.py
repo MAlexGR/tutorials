@@ -199,6 +199,8 @@ html_sidebars = {
 
 html_static_path = ['_static']
 
+html_domain_indices = True
+
 
 ##---------------PDF OUTPUT ------------------------------------------
 # δες https://rinohtype.readthedocs.io/en/latest/index.html
