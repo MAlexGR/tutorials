@@ -14,7 +14,6 @@ rinohtype = "*"
 sphinx-bootstrap-theme = "*"
 sphinxcontrib-mermaid = "*"
 graphviz = "*"
-sphinx-tabs = "*"
 nbsphinx = "*"
 sphinx-copybutton = "*"
 
