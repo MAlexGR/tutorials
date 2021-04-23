@@ -10,7 +10,7 @@ faker==4.0.3
 git+https://github.com/bashtage/sphinx-material.git@bcd41a2d548f939f49bc89fc25cf822e1f784795#egg=sphinx-material
 idna==2.9
 imagesize==1.2.0
-jinja2==2.11.2
+jinja2>=2.11.3
 markupsafe==1.1.1
 packaging==20.3
 pygments>=2.7.4
